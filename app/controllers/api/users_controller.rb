@@ -3,7 +3,7 @@ class Api::UsersController < ApplicationController
     # needed?
     def index
         @users = User.all
-        render :index
+        # render :index
     end
 
     def show
