@@ -7,15 +7,15 @@ import {Route, Link} from 'react-router-dom';
 const App = () => (
     <div>
         <header>
+            <Link to='/' id="logo">P</Link>
             <nav>
-                <Link to='/' className="header-link" id="logo">P</Link>
                 <div className="header-link">Products</div>
                 <div className="header-link">Community</div>
                 <div className="header-link">Tools</div>
                 <div className="header-link">Jobs</div>
                 <div className="header-link">About</div>
-                <div className="header-link"><GreetingContainer /></div>
             </nav>
+            <div className="greeting-cont"><GreetingContainer /></div>
         </header>
         <Route path="/login" component={LoginFormContainer} />
         <Route path="/signup" component={SignupFormContainer} />
