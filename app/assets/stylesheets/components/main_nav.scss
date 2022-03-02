@@ -55,7 +55,13 @@ nav {
     display: block;
     box-sizing: border-box;
     text-align: center;
-    
+}
+
+#header-greeting {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .button {

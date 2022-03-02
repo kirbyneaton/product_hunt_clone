@@ -10,8 +10,8 @@ const Greeting = ({ currentUser, logout }) => {
     );
     const customGreeting = () => (
         <nav>
-            <h1>Hi, {currentUser.username}!</h1>
-            <button onClick={logout}>Logout</button>
+            <h1 id='header-greeting'>Hi, {currentUser.username}!</h1>
+            <button className='button' id='signup-button' onClick={logout}>Logout</button>
         </nav>
     );
 
