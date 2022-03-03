@@ -43,7 +43,8 @@ class SessionForm extends React.Component {
                     <p>Join our community of friendly folks discovering and sharing the latest products in tech.</p>
                     <br />
                     Please {this.props.formType} or <span>{this.props.otherForm}</span>
-                    {this.renderErrors()}
+                    <div className='errors'>{this.renderErrors()}</div>
+                    <div className='modal-close' onClick={this.props.closeModal}>✕</div>
                     <div>
                         <br />
                         <label>Username:

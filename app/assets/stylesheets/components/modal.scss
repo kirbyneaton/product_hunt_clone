@@ -9,22 +9,33 @@
  }
 
  .modal-child {
-   position: absolute;
+   position: fixed;
    background-color: white;
    border: 20px solid rgb(243, 243, 243);
    border-radius: 4px;
-   top: 45%;
-   left: 50%;
-   width: 45%;
+   top: 18%;
+   left: 30%;
+   width: 40%;
    height: 50%;
-   transform: translate(-50%, -50%);
  }
 
- .close-x {
-   position: absolute;
-   top: 5px;
-   right: 5px;
+ .modal-close {
+   position: fixed;
+   top: 30px;
+   left: 30px;
+   background-color: white;
+   border-radius: 50%;
+   height: 40px;
+   width: 40px;
+   font-size: 18px;
+   font-weight: bold;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    cursor: pointer;
+   &:hover {
+     color: #f64900;
+   }
  }
 
  #modal-title {
@@ -40,6 +51,10 @@
         color: #f64900;
         cursor: pointer;
     };
+ }
+
+ .errors {
+  color: red;
  }
 
  input {
