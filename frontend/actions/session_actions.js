@@ -37,3 +37,15 @@ export const logout = () => dispatch => (
     SessionAPIUtil.logout()
     .then(user => (dispatch(logoutCurrentUser())))
 );
+
+// export const loginDemoUser = () => dispatch => {
+//     const user = { 
+//         username: 'Demo User',
+//         password: '123456'
+//     }
+//     return (
+//     SessionAPIUtil.login(user)
+//     .then(user => (dispatch(receiveCurrentUser(user))),
+//     error => (dispatch(receiveErrors(error.responseJSON))))
+//     );
+// };
