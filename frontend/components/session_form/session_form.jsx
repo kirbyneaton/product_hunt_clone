@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 class SessionForm extends React.Component {
     constructor(props) {
@@ -37,9 +38,11 @@ class SessionForm extends React.Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    {this.props.formType} on Product Hunt!
+                    <h3 id="modal-title">{this.props.formType} on Product Hunt</h3>
                     <br />
-                    Please {this.props.formType} or {this.props.navLink}
+                    <p>Join our community of friendly folks discovering and sharing the latest products in tech.</p>
+                    <br />
+                    Please {this.props.formType} or <span>{this.props.otherForm}</span>
                     {this.renderErrors()}
                     <div>
                         <br />
@@ -57,7 +60,7 @@ class SessionForm extends React.Component {
                             />
                         </label>
                         <br />
-                        <input type="submit" value={this.props.formType} />
+                        <input type="submit" className='submit-modal' value={this.props.formType} />
                     </div>
                 </form>
             </div>
@@ -65,4 +68,4 @@ class SessionForm extends React.Component {
     }
 }
 
-export default SessionForm;
+export default withRouter(SessionForm);
