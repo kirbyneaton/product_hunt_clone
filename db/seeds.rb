@@ -6,6 +6,36 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Product.delete_all
+User.delete_all
 
 demo_user = User.create!(username: 'Demo User', password: '123456')
+
+User.create!(username: 'Otis', password: '123456')
+
+
+Product.create!(
+    title: 'One Fish',
+    description: 'This one has a little car.',
+    user_id: 1
+)
+
+Product.create!(
+    title: 'Two Fish',
+    description: 'This one has a little star.',
+    user_id: 1
+)
+
+Product.create!(
+    title: 'Red Fish',
+    description: 'Some are red.',
+    user_id: 2
+)
+
+Product.create!(
+    title: 'Blue Fish',
+    description: 'Some are blue.',
+    user_id: 2
+)
+
 
