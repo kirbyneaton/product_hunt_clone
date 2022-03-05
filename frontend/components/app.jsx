@@ -2,7 +2,8 @@ import React from "react";
 import GreetingContainer from "./greeting/greeting_container";
 import LoginFormContainer from "./session_form/login_form_container";
 import SignupFormContainer from "./session_form/signup_form_container";
-import {Route, Link} from 'react-router-dom';
+import ProductIndexContainer from "./product_index/product_index_container";
+import {Route, Switch, Link} from 'react-router-dom';
 import Modal from "./modal/modal";
 
 const App = () => (
@@ -19,6 +20,9 @@ const App = () => (
             </nav>
             <div className="greeting-cont"><GreetingContainer /></div>
         </header>
+     
+        <Route path="/" component={ProductIndexContainer} />
+
        
     </div>
 );

@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import Root from "./components/root"
 import configureStore from "./store/store";
 import * as SessionApiUtil from './util/session_api_util'
+import * as ProductApiUtil from './util/product_api_util'
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const root = document.getElementById("root");
@@ -19,13 +21,16 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         store = configureStore();
     };
-    ReactDOM.render(<Root store={ store} />, root);
+    ReactDOM.render(<Root store={ store } />, root);
 
     // just for testing!
     window.signup = SessionApiUtil.signup
     window.login = SessionApiUtil.login
     window.logout = SessionApiUtil.logout
-    window.loginDemoUser = SessionApiUtil.loginDemoUser
+    window.loginDemoUser = ProductApiUtil.loginDemoUser
+    window.fetchProducts = ProductApiUtil.fetchProducts
+    window.fetchProduct = ProductApiUtil.fetchProduct
+
 
     window.getState = store.getState;
     window.dispatch = store.dispatch; 
