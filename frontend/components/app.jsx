@@ -10,7 +10,7 @@ const App = () => (
     <div>
         <Modal />
         <header>
-            <Link to='/' id="logo">P</Link>
+            <Link to='/' id="header-logo"><img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/product-index/app/assets/images/product-hunt-logo-orange-960.png" id="logo" alt="product-hunt-logo" /></Link>
             <nav>
                 <div className="header-link">Products</div>
                 <div className="header-link">Community</div>

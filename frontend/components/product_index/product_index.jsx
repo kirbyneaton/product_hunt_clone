@@ -12,7 +12,7 @@ class ProductIndex extends React.Component {
         const { products, deleteProduct } = this.props;
         return (
             <div>
-                <h1>Is the next 🦄 here?</h1>
+                <h1>Is the next 🐟 here?</h1>
                 {/* <h1>Your next favorite thing 👇</h1> */}
                 <ul className="product-index">
                     {
