@@ -84,12 +84,12 @@ nav {
     line-height: 24px;
     font-weight: 600;
     padding: 8px 16px;
-}
-
-#signup-button:hover {
-    background: linear-gradient(227deg,#ff4582,#e12e0d);
-    cursor: pointer;
-    transition: all .3s ease;
+    
+    &:hover{
+        background: linear-gradient(227deg,#ff4582,#e12e0d);
+        cursor: pointer;
+        // transition: all .3s ease;
+    }
 }
 
 
