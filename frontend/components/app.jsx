@@ -3,6 +3,7 @@ import GreetingContainer from "./greeting/greeting_container";
 import LoginFormContainer from "./session_form/login_form_container";
 import SignupFormContainer from "./session_form/signup_form_container";
 import ProductIndexContainer from "./product_index/product_index_container";
+import ProductShowContainer from "./product_show/product_show_container";
 import {Route, Switch, Link} from 'react-router-dom';
 import Modal from "./modal/modal";
 
@@ -20,9 +21,11 @@ const App = () => (
             </nav>
             <div className="greeting-cont"><GreetingContainer /></div>
         </header>
-     
-        <Route path="/" component={ProductIndexContainer} />
-
+        <Switch>
+            <Route path="/products/:productId" component={ProductShowContainer} />
+            <Route exact path="/" component={ProductIndexContainer} />
+        </Switch>
+        
        
     </div>
 );
