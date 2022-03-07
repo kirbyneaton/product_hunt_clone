@@ -47,6 +47,7 @@ class SessionForm extends React.Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
+                    <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/product-index/app/assets/images/product-hunt-logo-orange-960.png" id="modal-logo" alt="product-hunt-logo" />
                     <h3 id="modal-title">{this.props.formType} on Product Hunt</h3>
                     <br />
                     <p>Join our community of friendly folks discovering and sharing the latest products in tech.</p>

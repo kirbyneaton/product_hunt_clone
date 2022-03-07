@@ -13,10 +13,10 @@
    background-color: white;
    border: 20px solid rgb(243, 243, 243);
    border-radius: 4px;
-   top: 18%;
-   left: 30%;
-   width: 40%;
-   height: 50%;
+   top: 15%;
+   left: 27%;
+   width: 46%;
+   height: 55%;
  }
 
  .modal-close {
@@ -36,6 +36,13 @@
    &:hover {
      color: #f64900;
    }
+ }
+
+ #modal-logo {
+   margin-top: 10px;
+   height: 40px;
+   width: 40px;
+   align-self: center;
  }
 
  #modal-title {
@@ -63,7 +70,7 @@
 
  .submit-modal {
     padding: 8px;
-    margin-top: 20px;
+    margin-top: 15px;
     background-color: white;
     justify-content: center;
     align-content: center;
