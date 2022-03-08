@@ -1,16 +1,19 @@
 import React from "react";
 import { connect } from "react-redux";
-import { fetchProducts, deleteProduct } from "../../actions/product_actions"
+import { openModal } from "../../actions/modal_actions";
+import { fetchProducts, fetchProduct, deleteProduct } from "../../actions/product_actions"
 import ProductIndex from "./product_index";
 
-const mapStateToProps = (state) => ({
-    // products: Object.values(state.products)
-    products: Object.values(state.entities.products)
+const mapStateToProps = (state ) => ({
+    products: Object.values(state.entities.products),
+    // product: products[productId],
 });
 
 const mapDispatchToProps = (dispatch) => ({
     fetchProducts: () => (dispatch(fetchProducts())),
-    deleteProduct: (productId) => (dispatch(deleteProduct(productId)))
+    fetchProduct: (productId) => (dispatch(fetchProduct(productId))),
+    deleteProduct: (productId) => (dispatch(deleteProduct(productId))),
+    openModal: (modal) => (dispatch(openModal(modal)))
 });
 
 export default connect(mapStateToProps,mapDispatchToProps)(ProductIndex);

@@ -1,18 +1,39 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 
-const ProductShow = ({product, productId, fetchProduct}) => {
-    const products = {
-        [productId]: product
-    };
+class ProductShow extends React.Component {
+    constructor(props){
+        super(props)
+    }
+    
+    render () {
+        debugger
+        return(
+            <div>
+                <p>Rendering Product Show Page</p>
+                {/* <p>{this.props.currentProduct.title}</p> */}
+
+            </div>
+        );
+    }
+    
+} 
+// const ProductShow = ({product, productId }) => {
+//     // const products = {
+//     //     [productId]: product
+//     // };
+
+    
+//         return (
+//             <div>
+//                 Rendering Product Show Page
+//                 {ui.modal}
+//                 {productId}
 
 
-    return(
-        <div>
-            Rendering Product Show Page
+//             </div>
+//         );
 
-        </div>
-    )
-}
+    
+// }
 
 export default ProductShow;

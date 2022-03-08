@@ -22,8 +22,8 @@ const App = () => (
             <div className="greeting-cont"><GreetingContainer /></div>
         </header>
         <Switch>
-            <Route path="/products/:productId" component={ProductShowContainer} />
-            <Route exact path="/" component={ProductIndexContainer} />
+            {/* <Route path="/products/:productId" component={ProductShowContainer} /> */}
+            <Route path="/" component={ProductIndexContainer} />
         </Switch>
         
        

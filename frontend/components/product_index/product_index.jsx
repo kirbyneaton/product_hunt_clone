@@ -9,15 +9,15 @@ class ProductIndex extends React.Component {
     }
 
     render(){
-        const { products, deleteProduct } = this.props;
+        const { products, deleteProduct, openModal, productId } = this.props;
         return (
             <div>
-                <h1>Is the next 🐟 here?</h1>
-                {/* <h1>Your next favorite thing 👇</h1> */}
+                {/* <h1>Is the next 🐟 here?</h1> */}
+                <h1>Your next favorite thing 👇</h1>
                 <ul className="product-index">
                     {
                     products.map(product => <ProductIndexItem 
-                        product={product} deleteProduct={deleteProduct} key={product.id}/>)
+                        openModal={openModal} product={product} deleteProduct={deleteProduct} productId={productId} key={product.id}/>)
                     }
                 </ul>
             </div>

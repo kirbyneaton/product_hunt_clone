@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { closeModal } from "../../actions/modal_actions";
 import LoginFormContainer from "../session_form/login_form_container";
 import SignupFormContainer from "../session_form/signup_form_container";
+import ProductShowContainer from "../product_show/product_show_container";
 
 
 const Modal = ({modal, closeModal}) => {
@@ -10,12 +11,18 @@ const Modal = ({modal, closeModal}) => {
         return (null);
     };
     let component;
+    // if (Number.isInteger(modal)){
+    //     component = <ProductShowContainer productId={modal}/>
+    // };
     switch (modal) {
         case 'Login':
             component = <LoginFormContainer />
             break;
         case 'Signup':
             component = <SignupFormContainer />
+            break;
+        case 1:
+            component = <ProductShowContainer productId={modal} /> //modal==1
             break;
         default:
             return null;
