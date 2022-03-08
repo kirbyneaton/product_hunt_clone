@@ -3,14 +3,14 @@ import { fetchProduct } from "../../actions/product_actions";
 import ProductShow from './product_show';
 import { closeModal } from "../../actions/modal_actions";
 
-const mapStateToProps = (state, productId) => {
+const mapStateToProps = (state, ownProps, productId) => {
     debugger
     // const productId = parseInt(match.params.productId);
     // const product = state.entities.products.productId; //edit
     return {
         products: Object.values(state.entities.products),
-        currentProduct: state.entities.products.productId,
-        productId,
+        currentProduct: state.entities.products[productId],
+        productId: ownProps.productId,
         // navLink: <Link to="/signup">Sign Up!</Link>
     };
 };

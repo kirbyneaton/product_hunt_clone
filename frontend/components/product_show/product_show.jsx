@@ -6,11 +6,18 @@ class ProductShow extends React.Component {
     }
     
     render () {
+        let currentProduct;
+        for (let product of this.props.products){
+            if (this.props.productId===product.id){
+                currentProduct = product
+            }
+        } 
         debugger
         return(
             <div>
                 <p>Rendering Product Show Page</p>
-                {/* <p>{this.props.currentProduct.title}</p> */}
+                <p>{currentProduct.title}</p>
+                <p>{currentProduct.description}</p>
 
             </div>
         );

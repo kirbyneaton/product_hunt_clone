@@ -14,7 +14,6 @@ class Api::ProductsController < ApplicationController
     def create
         @product = Product.new(product_params)
         if @product.save
-            login!(@product)
             render :show
         else
             render json: @product.errors.full_messages, status: 401

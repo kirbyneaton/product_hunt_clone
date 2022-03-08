@@ -21,8 +21,8 @@ const Modal = ({modal, closeModal}) => {
         case 'Signup':
             component = <SignupFormContainer />
             break;
-        case 1:
-            component = <ProductShowContainer productId={modal} /> //modal==1
+        case modal:
+            component = <ProductShowContainer  productId={modal} /> //e.g. modal==1
             break;
         default:
             return null;
@@ -37,9 +37,13 @@ const Modal = ({modal, closeModal}) => {
 };
 
 
-const mapStateToProps = (state) => ({
-    modal: state.ui.modal
-})
+const mapStateToProps = (state) => {
+    return ({
+    modal: state.ui.modal,
+    // products: state.entities.products
+    })
+
+}
 
 const mapDispatchToProps = (dispatch) => ({
     closeModal: () => dispatch(closeModal())

@@ -39,3 +39,15 @@ Product.create!(
 )
 
 
+Comment.create!(
+    body: 'This is Comment 1',
+    user_id: 2,
+    parent_comment_id: null
+)
+
+Comment.create!(
+    body: 'This is Comment 2',
+    user_id: 3,
+    parent_comment_id: 1
+)
+
