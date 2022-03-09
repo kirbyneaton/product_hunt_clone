@@ -23,13 +23,19 @@ const Modal = ({modal, closeModal}) => {
             break;
         case modal:
             component = <ProductShowContainer  productId={modal} /> //e.g. modal==1
-            break;
+            return (
+                <div className="modal-background" onClick={closeModal}>
+                    <div className="modal-content-product" onClick={e => e.stopPropagation()}>
+                        {component}
+                    </div>
+                </div>
+            );
         default:
             return null;
     };
     return (
         <div className="modal-background" onClick={closeModal}>
-            <div className="modal-child" onClick={e => e.stopPropagation()}>
+            <div className="modal-content-signin" onClick={e => e.stopPropagation()}>
                 {component}
             </div>
         </div>

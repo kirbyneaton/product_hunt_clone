@@ -4,7 +4,7 @@ import ProductShow from './product_show';
 import { closeModal } from "../../actions/modal_actions";
 
 const mapStateToProps = (state, ownProps, productId) => {
-    debugger
+    // debugger
     // const productId = parseInt(match.params.productId);
     // const product = state.entities.products.productId; //edit
     return {

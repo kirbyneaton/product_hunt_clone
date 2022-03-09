@@ -1,4 +1,6 @@
- .modal-background {
+@import "variables";
+
+.modal-background {
    position: fixed;
    top: 0;
    bottom: 0;
@@ -8,7 +10,7 @@
    z-index: 50;
  }
 
- .modal-child {
+ .modal-content-signin {
    position: fixed;
    background-color: white;
    border: 20px solid rgb(243, 243, 243);
@@ -64,8 +66,14 @@
   color: red;
  }
 
+ label {
+   display: inline-block;
+   width: 5em;
+ }
+
  input {
-   margin-left: 5px;
+   margin-left: 2px;
+   
  }
 
  .submit-modal {

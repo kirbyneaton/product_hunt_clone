@@ -22,9 +22,9 @@ class ProductIndexItem extends React.Component {
                     <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/product-index/app/assets/images/fish1.jpeg" alt="product-picture" />
                     <div className="product-text-container">
 
-                        {/* <Link to={`/products/${product.id}`} className="product-title">{product.title}</Link>
+                        <Link to={`/products/${product.id}`} className="product-title">{product.title}</Link>
                         <br />
-                        <Link to={`/products/${product.id}`} className="product-description">{product.description}</Link> */}
+                        <Link to={`/products/${product.id}`} className="product-description">{product.description}</Link>
                         {/* <Link>Edit</Link>
                         <button type="submit" onClick={this.handleSubmit}>Delete</button> */}
                         <p className="comment-count"># of comments: 0</p>

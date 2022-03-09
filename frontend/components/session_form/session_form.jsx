@@ -20,6 +20,10 @@ class SessionForm extends React.Component {
         e.preventDefault();
         const user = Object.assign({}, this.state);
         this.props.processForm(user);
+        this.setState({
+            username: '',
+            password: ''
+        });
     }
 
     handleDemo(e) {
@@ -57,19 +61,16 @@ class SessionForm extends React.Component {
                     <div className='modal-close' onClick={this.props.closeModal}>✕</div>
                     <div>
                         <br />
-                        <label>Username:
-                            <input type="text"
+                        <label htmlFor="username">Username:</label><input type="text" id="username"
                                 value={this.state.username}
                                 onChange={this.update('username')}
                             />
-                        </label>
                         <br />
-                        <label>Password:
-                            <input type="password"
+                        <label htmlFor="password">Password:</label>
+                            <input type="password" id="password"
                                 value={this.state.password}
                                 onChange={this.update('password')}
                             />
-                        </label>
                         <br />
                         <input type="submit" className='submit-modal' value={this.props.formType} />
                         <br />

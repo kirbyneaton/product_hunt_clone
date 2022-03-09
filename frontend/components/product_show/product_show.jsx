@@ -12,13 +12,21 @@ class ProductShow extends React.Component {
                 currentProduct = product
             }
         } 
-        debugger
+        // debugger
         return(
             <div>
-                <p>Rendering Product Show Page</p>
-                <p>{currentProduct.title}</p>
-                <p>{currentProduct.description}</p>
-
+                <div className='modal-close' onClick={this.props.closeModal}>✕</div>
+                <div className="product-show-item">
+                    <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/product-index/app/assets/images/fish1.jpeg" alt="product-picture" id="product-photo"/>
+                    <div className="product-show-text-container">
+                        <h1 id="product-show-title">{currentProduct.title}</h1>
+                        <h2 id="product-show-description">{currentProduct.description}</h2>
+                        {/* <p>{currentProduct.comments}</p> */}
+                    </div>
+                </div>
+                <div id="product-show-overview">
+                    testing
+                </div>
             </div>
         );
     }

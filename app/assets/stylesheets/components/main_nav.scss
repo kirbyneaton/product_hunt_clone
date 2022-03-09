@@ -1,3 +1,5 @@
+@import "variables";
+
 img#logo{
     width: 40px;
     height: 40px;
@@ -10,10 +12,9 @@ a#header-logo {
 
 body {
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-    -webkit-font-smoothing: antialiased;
     font-size: 16px;
     line-height: 24px;
-    color: #4b587c;
+    color: $text-grey;
 }
 
 
@@ -22,13 +23,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
+    // box-sizing: border-box;
     padding: 20px;
-    box-shadow: 0px 0px 1px 1px rgba($color: rgb(33, 41, 63), $alpha: .1);
+    // box-shadow: 0px 0px 1px 1px rgba($color: rgb(33, 41, 63), $alpha: .1);
+    border-bottom: 1px solid $border-grey;
     top: 0;
     position: sticky;
-    z-index: 20;
-    // height: 80px;
+    z-index: 10;
+    background-color: white;
 }
 
 .header-link, .button {
@@ -39,9 +41,14 @@ header {
 
 nav {
    display: flex;
-   box-sizing: border-box;
-   
+   box-sizing: border-box; 
 }
+
+// nav.login-signup-modal {
+//    display: flex;
+//    box-sizing: border-box;
+//    height: 40px;
+// }
 
 .greeting-cont {
     display: block;
@@ -49,26 +56,31 @@ nav {
     text-align: center;
 }
 
-#header-greeting {
+h4#header-greeting {
     display: flex;
     margin-left: 20px;
     align-items: center;
-    justify-content: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: $text-grey;
+    font-weight: 400;
+    width: 150px;
+    justify-content: right;
+  
 }
 
 .button {
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-    -webkit-font-smoothing: antialiased;
     font-size: 16px;
     line-height: 24px;
-    color: #4b587c;
+    color: $text-grey;
     align-items: center;
     display: flex;
     justify-content: center;
 }
 
 .button#signup-button {
-    background-color: #f64900;
+    background-color: $orange;
     border-radius: 4px;
     color: white;
     text-align: center;
@@ -76,6 +88,7 @@ nav {
     line-height: 24px;
     font-weight: 600;
     padding: 8px 16px;
+    height: 40px;
     
     &:hover{
         background: linear-gradient(227deg,#ff4582,#e12e0d);
@@ -85,10 +98,12 @@ nav {
 }
 
 
-#login-button {
+#signin-button {
+    width: 150px;
+    justify-content: right;
     
     &:hover {
-        color: #f64900;
+        color: $orange;
         cursor: pointer;
     }
 }

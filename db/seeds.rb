@@ -38,6 +38,18 @@ Product.create!(
     user_id: 2
 )
 
+Product.create!(
+    title: 'Five Fish',
+    description: 'Fish 5 desc.',
+    user_id: 2
+)
+
+Product.create!(
+    title: 'Six Fish',
+    description: 'Fish 6 desc.',
+    user_id: 2
+)
+
 
 Comment.create!(
     body: 'This is Comment 1',
