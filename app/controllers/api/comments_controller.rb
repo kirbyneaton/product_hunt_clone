@@ -1,4 +1,4 @@
-class Api::CommentsControllerController < ApplicationController
+class Api::CommentsController < ApplicationController
 
     before_action :require_logged_in, only: [:create, :destroy]
 
