@@ -57,8 +57,46 @@ img#product-photo {
     display: block;
     background-color: white;
     margin-left: 2%;
+    margin-bottom: 20px;
     width: 65%;
+    height: 250px;
     border: 1px solid $border-grey;
     border-radius: 4px;
+ }
 
+ 
+
+ #discussion {
+   font-size: 10px;
+   text-align: left;
+   color: $dark-grey;
+   font-weight: 700;
+   margin-left: 2%;
+   margin-bottom: 10px;
+ }
+
+ #product-show-comments {
+   display: block;
+   background-color: white;
+   margin-left: 2%;
+   width: 65%;
+   height: 250px;
+   border: 1px solid $border-grey;
+   border-radius: 4px;
+   font-size: 12px;
+   text-align: left;
+      #comment-indv {
+         margin-left: 30px;
+         margin-top: 20px;
+         border-left: 3px solid rgb(240, 240, 240); 
+      }
+         #comment-username {
+            font-weight: 700;
+            color: $dark-grey;
+            margin-left: 10px;
+         }
+         #comment-body {
+            margin-left: 10px;
+
+         }
  }

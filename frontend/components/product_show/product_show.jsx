@@ -11,9 +11,9 @@ class ProductShow extends React.Component {
 
     renderComment(comment){
         return(
-            <div key={comment.id}>
-                <p>{comment.user.username }</p>
-                <p>{comment.body}</p>
+            <div id="comment-indv" key={comment.id}>
+                <p id="comment-username">{comment.user.username }</p>
+                <p id="comment-body">{comment.body}</p>
             </div>
             
         )
@@ -39,11 +39,12 @@ class ProductShow extends React.Component {
                 </div>
                 <div id="product-show-overview">
                     product-show-overview testing
+                    <p id="product-show-description">{currentProduct.description}</p>
                 </div>
+                <h5 id="discussion">DISCUSSION</h5>
                 <div id="product-show-comments">
                     {this.props.comments.map(this.renderComment)}
 
-                    
                     {/* <p>{!(this.props.comments) ? "loading" : this.props.comments.toString()}</p>  */}
                 </div>
             </div>
