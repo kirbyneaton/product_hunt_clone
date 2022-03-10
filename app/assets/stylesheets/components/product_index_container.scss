@@ -51,17 +51,19 @@ a {
     color: $dark-grey;
 }
 
-.product-title {
+p.product-title {
     font-weight: 700;
+    
     // margin-left: 16px;
     
     // border: 1px solid green;
     
 }
 
-.product-subtitle {
+p.product-subtitle {
     color: $text-grey;
     // margin-left: 16px;
+    
    
     // border: 1px solid blue;
 }

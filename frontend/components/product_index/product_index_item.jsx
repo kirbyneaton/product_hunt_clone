@@ -21,14 +21,11 @@ class ProductIndexItem extends React.Component {
                 <li className="product-item" onClick={() => openModal(product.id)}>
                     <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/product-index/app/assets/images/fish1.jpeg" alt="product-picture" />
                     <div className="product-text-container">
-
-                        <Link to={`/products/${product.id}`} className="product-title">{product.title}</Link>
-                        <br />
-                        <Link to={`/products/${product.id}`} className="product-subtitle">{product.subtitle}</Link>
+                        <p className="product-title">{product.title}</p>
+                        <p className="product-subtitle">{product.subtitle}</p>
                         {/* <Link>Edit</Link>
                         <button type="submit" onClick={this.handleSubmit}>Delete</button> */}
                         <p className="comment-count">Comments: {product.comments.length}</p>
-                        {/* number of comments? */}
                     </div>
                 </li>
             </div>
