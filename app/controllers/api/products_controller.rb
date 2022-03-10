@@ -3,7 +3,7 @@ class Api::ProductsController < ApplicationController
     before_action :require_logged_in, only: [:create, :destroy]
 
     def index
-        @products = Product.all
+        @products = Product.all.includes(:comments)
         render :index
     end
 
@@ -23,6 +23,6 @@ class Api::ProductsController < ApplicationController
     private
   
     def product_params
-        params.require(:product).permit(:title, :description)
+        params.require(:product).permit(:title, :subtitle, :description)
     end
 end

@@ -4,6 +4,7 @@ import Root from "./components/root"
 import configureStore from "./store/store";
 import * as SessionApiUtil from './util/session_api_util'
 import * as ProductApiUtil from './util/product_api_util'
+import * as CommentApiUtil from './util/comment_api_util'
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -30,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.loginDemoUser = ProductApiUtil.loginDemoUser
     window.fetchProducts = ProductApiUtil.fetchProducts
     window.fetchProduct = ProductApiUtil.fetchProduct
-
+    window.fetchProductComments = CommentApiUtil.fetchProductComments
 
     window.getState = store.getState;
     window.dispatch = store.dispatch; 

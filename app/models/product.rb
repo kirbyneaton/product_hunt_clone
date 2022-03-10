@@ -1,6 +1,6 @@
 class Product < ApplicationRecord
 
-    validates :title, :description, presence:true
+    validates :title, :subtitle, :description, presence:true
 
     has_many :comments
     belongs_to :user

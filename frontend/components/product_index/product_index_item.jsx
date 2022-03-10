@@ -24,10 +24,10 @@ class ProductIndexItem extends React.Component {
 
                         <Link to={`/products/${product.id}`} className="product-title">{product.title}</Link>
                         <br />
-                        <Link to={`/products/${product.id}`} className="product-description">{product.description}</Link>
+                        <Link to={`/products/${product.id}`} className="product-subtitle">{product.subtitle}</Link>
                         {/* <Link>Edit</Link>
                         <button type="submit" onClick={this.handleSubmit}>Delete</button> */}
-                        <p className="comment-count"># of comments: 0</p>
+                        <p className="comment-count">Comments: {product.comments.length}</p>
                         {/* number of comments? */}
                     </div>
                 </li>

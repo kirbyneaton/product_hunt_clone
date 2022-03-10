@@ -13,53 +13,63 @@ demo_user = User.create!(username: 'Demo User', password: '123456')
 
 User.create!(username: 'Otis', password: '123456')
 
+User.create!(username: 'Holly', password: '123456')
+
 
 Product.create!(
     title: 'One Fish',
-    description: 'This one has a little car.',
+    subtitle: 'This one has a little car.',
+    description: "Really, really, really, really, really, really, long test description",
     user_id: 1
 )
 
 Product.create!(
     title: 'Two Fish',
-    description: 'This one has a little star.',
+    subtitle: 'This one has a little star.',
+    description: "Really, really, really, really, really, really, long test description",
     user_id: 1
 )
 
 Product.create!(
     title: 'Red Fish',
-    description: 'Some are red.',
+    subtitle: 'Some are red.',
+    description: "Really, really, really, really, really, really, long test description",
     user_id: 2
 )
 
 Product.create!(
     title: 'Blue Fish',
-    description: 'Some are blue.',
+    subtitle: 'Some are blue.',
+    description: "Really, really, really, really, really, really, long test description",
     user_id: 2
 )
 
 Product.create!(
     title: 'Five Fish',
-    description: 'Fish 5 desc.',
+    subtitle: 'Fish 5 desc.',
+    description: "Really, really, really, really, really, really, long test description",
     user_id: 2
 )
 
 Product.create!(
     title: 'Six Fish',
-    description: 'Fish 6 desc.',
+    subtitle: 'Fish 6 desc.',
+    description: "Really, really, really, really, really, really, long test description",
     user_id: 2
 )
 
 
 Comment.create!(
     body: 'This is Comment 1',
-    user_id: 2,
-    parent_comment_id: null
+    user_id: 1,
+    product_id: 1,
+    parent_comment_id: nil
 )
 
 Comment.create!(
     body: 'This is Comment 2',
-    user_id: 3,
+    user_id: 2,
+    product_id: 1,
     parent_comment_id: 1
 )
 

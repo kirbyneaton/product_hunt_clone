@@ -34,3 +34,4 @@ export const deleteProduct = (id) => (
         url: `/api/products/${id}`
     })
 );
+

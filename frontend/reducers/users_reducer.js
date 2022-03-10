@@ -1,4 +1,6 @@
 import { RECEIVE_CURRENT_USER } from '../actions/session_actions';
+import { RECEIVE_PRODUCT} from '../actions/product_actions';
+import { RECEIVE_COMMENT } from '../actions/comment_actions';
 
 const usersReducer = (state = {}, action) => {
     Object.freeze(state);
@@ -7,6 +9,11 @@ const usersReducer = (state = {}, action) => {
         case RECEIVE_CURRENT_USER:
             nextState[action.currentUser.id] = action.currentUser
             return nextState;
+        case RECEIVE_COMMENT:
+            nextState[action.user.id] = action.user
+            return nextState;
+        case RECEIVE_PRODUCT:
+            return action.users;
         default:
             return state;
     }
