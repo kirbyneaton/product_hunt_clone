@@ -33,10 +33,15 @@ header {
     background-color: white;
 }
 
-.header-link, .button {
+a.header-link {
     display: block;
     margin-left: 20px;
     align-items: center;
+    color: $text-grey;
+    &:hover {
+        color: $orange;
+        cursor: pointer;
+    }
 }
 
 nav {
@@ -77,6 +82,31 @@ h4#header-greeting {
     align-items: center;
     display: flex;
     justify-content: center;
+    margin-left: 20px;
+}
+
+div#login-corner {
+    display: flex;
+}
+
+button#create-product {
+    color: $orange;
+    align-items: center;
+    &:hover {
+        color: #e12e0d;
+        cursor: pointer;
+    }
+    // border: 1px solid green;
+}
+
+#signin-button {
+    width: 100px;
+    justify-content: right;
+    // border: 1px solid red;
+    &:hover {
+        color: $orange;
+        cursor: pointer;
+    }
 }
 
 .button#signup-button {
@@ -89,22 +119,10 @@ h4#header-greeting {
     font-weight: 600;
     padding: 8px 16px;
     height: 40px;
-    
+    // border: 1px solid blue;
     &:hover{
         background: linear-gradient(227deg,#ff4582,#e12e0d);
         cursor: pointer;
         // transition: all .3s ease;
     }
 }
-
-
-#signin-button {
-    width: 150px;
-    justify-content: right;
-    
-    &:hover {
-        color: $orange;
-        cursor: pointer;
-    }
-}
-
