@@ -52,9 +52,9 @@ class SessionForm extends React.Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/product-index/app/assets/images/product-hunt-logo-orange-960.png" id="modal-logo" alt="product-hunt-logo" />
-                    <h3 id="modal-title">{this.props.formType} on Product Hunt</h3>
+                    <h3 id="modal-title">{this.props.formType} on Product Fish</h3>
                     <br />
-                    <p>Join our community of friendly folks discovering and sharing the latest products in tech.</p>
+                    <p>Join our community of friendly bears discovering and sharing the freshest fish!</p>
                     <br />
                     Please {this.props.formType} or <span>{this.props.otherForm}</span>
                     <div className='errors'>{this.renderErrors()}</div>
