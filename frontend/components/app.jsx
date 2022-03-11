@@ -6,6 +6,8 @@ import ProductIndexContainer from "./product_index/product_index_container";
 import ProductShowContainer from "./product_show/product_show_container";
 import {Route, Switch, Link} from 'react-router-dom';
 import Modal from "./modal/modal";
+import CreateProductFormContainer from "./product_form/create_product_form_container";
+import EditProductFormContainer from "./product_form/edit_product_form_container";
 
 const App = () => (
     <div>
@@ -18,13 +20,16 @@ const App = () => (
                 <a href="https://angel.co/u/kirby-neaton" target="_blank" className="header-link">AngelList</a>
             </nav>
             <div id="login-corner">
-                <button id="create-product">Submit New Fish</button>
+                <Link id="submit-new-fish" to='/products'><button id="submit-product">Submit New Fish</button></Link>
+                {/* ^this should 'Link to' the route for the create/edit container & add route below in switch? 'Route path=' */}
                 <div className="greeting-cont"><GreetingContainer /></div>
             </div>
         </header>
         <Switch>
             {/* <Route path="/products/:productId" component={ProductShowContainer} /> */}
-            <Route path="/" component={ProductIndexContainer} />
+            <Route exact path="/products" component={CreateProductFormContainer} />
+            <Route path="/products/:productId/edit" component={EditProductFormContainer} />
+            <Route exact path="/" component={ProductIndexContainer} />
         </Switch>
         
        

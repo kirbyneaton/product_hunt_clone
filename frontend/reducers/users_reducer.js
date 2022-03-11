@@ -12,8 +12,6 @@ const usersReducer = (state = {}, action) => {
         case RECEIVE_COMMENT:
             nextState[action.user.id] = action.user
             return nextState;
-        case RECEIVE_PRODUCT:
-            return action.users;
         default:
             return state;
     }

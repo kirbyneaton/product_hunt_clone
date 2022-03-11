@@ -9,7 +9,7 @@ const Greeting = ({ currentUser, logout, openModal }) => {
     );
     const customGreeting = () => (
         <nav className='login-signup-modal'>
-            <h4 id='header-greeting'>Hi, {currentUser.username}!</h4>
+            <h4 id='header-greeting'>Hi, {currentUser.username}! 🐻</h4>
             <button className='button' id='signup-button' onClick={logout}>Logout</button>
         </nav>
     );

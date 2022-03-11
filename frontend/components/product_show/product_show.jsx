@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 class ProductShow extends React.Component {
     constructor(props){
@@ -12,7 +13,7 @@ class ProductShow extends React.Component {
     renderComment(comment){
         return(
             <div id="comment-indv" key={comment.id}>
-                <p id="comment-username">{comment.user.username }</p>
+                <p id="comment-username">🐻 {comment.user.username}</p>
                 <p id="comment-body">{comment.body}</p>
             </div>
             
@@ -35,8 +36,13 @@ class ProductShow extends React.Component {
                     <div className="product-show-text-container">
                         <h1 id="product-show-title">{currentProduct.title}</h1>
                         <h2 id="product-show-subtitle">{currentProduct.subtitle}</h2>
+                        <div className="edit-delete">
+                            <Link to={`/products/${currentProduct.id}/edit`}><button onClick={this.props.closeModal} id="edit-product">Edit Fish</button></Link>
+                            <button onClick={() => this.props.deleteProduct(currentProduct.id)} id="delete-product">Delete Fish</button>
+                        </div>
                     </div>
                 </div>
+                
                 <div id="product-show-overview">
                     product-show-overview testing
                     <p id="product-show-description">{currentProduct.description}</p>

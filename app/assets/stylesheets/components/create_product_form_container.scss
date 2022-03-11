@@ -1,0 +1,57 @@
+@import "variables";
+
+form {
+    align-items: left;
+    justify-content: left;
+    // display: flex;
+    margin-left: 80px;
+}
+
+#create-product {
+    margin-left: 0px;
+   
+    
+}
+
+form label{
+    display: block;
+    width: 0em;
+    margin-left: 0px;
+    
+}
+
+.input { 
+    display: block;
+    align-self: left;
+    margin-left: 0px;
+}
+
+textarea {
+    width: 420px;
+    height: 80px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+.submit-product {
+    display: block;
+    color: white;
+    padding: 8px;
+    margin-top: 15px;
+    background-color: $orange;
+    justify-content: center;
+    align-content: center;
+    margin-left: 0px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    height: 45px;
+    width: 150px;
+    border: none;
+    box-shadow: none;
+    &:hover {
+      background: linear-gradient(227deg,#ff4582,#e12e0d);
+      cursor: pointer;
+    //   transition: all .3s ease;
+    }
+}
+

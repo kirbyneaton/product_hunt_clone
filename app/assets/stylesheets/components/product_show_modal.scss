@@ -6,11 +6,11 @@
    position: fixed;
    background-color: $background-grey;
    border-radius: 4px;
-   top: 13%;
+   bottom: 0%;
    left: 10%;
    width: 80%;
-   height: 110%; 
-//    overflow-y: auto;  
+   height: 87%;
+   overflow: scroll;  
  }
 
  .product-show-item {
@@ -51,6 +51,25 @@ img#product-photo {
     color: $text-grey;
     font-size: 16px;
     line-height: 40px;
+ }
+
+
+ .edit-delete {
+    align-items: right;
+ }
+
+ button#edit-product, button#delete-product {
+    color: $text-grey;
+    margin-right: 15px;
+    padding: 3px;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid $border-grey;
+    &:hover {
+        color: $orange;
+        border: 1px solid $orange;
+        cursor: pointer;
+    }
  }
 
  #product-show-overview {

@@ -3,6 +3,7 @@ import * as ProductApiUtil from '../util/product_api_util';
 export const RECEIVE_ALL_PRODUCTS = 'RECEIVE_ALL_PRODUCTS';
 export const RECEIVE_PRODUCT = 'RECEIVE_PRODUCT';
 export const REMOVE_PRODUCT = 'REMOVE_PRODUCT';
+export const RECEIVE_SESSION_ERRORS = 'RECEIVE_SESSION_ERRORS';
 
 
 export const receiveAllProducts = (products) => ({
@@ -10,11 +11,11 @@ export const receiveAllProducts = (products) => ({
     products
 });
 
-export const receiveProduct = ({product, comments, users}) => ({
+export const receiveProduct = (product) => ({
     type: RECEIVE_PRODUCT,
     product,
-    comments,
-    users
+    // comments,
+    // users
 });
 
 export const removeProduct = (productId) => ({
@@ -22,7 +23,10 @@ export const removeProduct = (productId) => ({
     productId
 });
 
-
+export const receiveErrors = errors => ({
+    type: RECEIVE_SESSION_ERRORS,
+    errors
+});
 
 /////
 
@@ -41,12 +45,12 @@ export const fetchProduct = (productId) => (dispatch) => (
 
 export const createProduct = (product) => (dispatch) => (
     ProductApiUtil.createProduct(product)
-        .then(product => (dispatch(receiveProduct(product))))
+        .then(product => (dispatch(receiveProduct(product))), error => (dispatch(receiveErrors(error.responseJSON))))
 )
 
 export const updateProduct = (product) => (dispatch) => (
     ProductApiUtil.updateProduct(product)
-        .then(product => (dispatch(receiveProduct(product))))
+        .then(product => (dispatch(receiveProduct(product))), error => (dispatch(receiveErrors(error.responseJSON))))
 )
 
 export const deleteProduct = (productId) => (dispatch) => (

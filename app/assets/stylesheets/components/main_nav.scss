@@ -89,9 +89,21 @@ div#login-corner {
     display: flex;
 }
 
-button#create-product {
-    color: $orange;
+#submit-new-fish {
     align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+#submit-product {
+    color: $orange;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 100%;
     &:hover {
         color: #e12e0d;
         cursor: pointer;

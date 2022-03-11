@@ -25,7 +25,7 @@ class ProductIndexItem extends React.Component {
                         <p className="product-subtitle">{product.subtitle}</p>
                         {/* <Link>Edit</Link>
                         <button type="submit" onClick={this.handleSubmit}>Delete</button> */}
-                        <p className="comment-count">Comments: {product.comments.length}</p>
+                        <p className="comment-count">🗨️    {product.comments.length}</p>
                     </div>
                 </li>
             </div>
