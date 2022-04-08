@@ -14,7 +14,9 @@ class SessionForm extends React.Component {
 
 
     // componentDidUpdate (prevProps, prevState) {
-    //     if (prevProps.currentUser)
+    //     if (prevProps.currentUser !== this.props.currentUser) {
+    //         this.setState({user: {}})
+    //     }
     // }
 
     update(field) {
