@@ -12,6 +12,13 @@ class SessionForm extends React.Component {
         this.handleDemo = this.handleDemo.bind(this);
     }
 
+
+    // componentDidUpdate (prevProps, prevState) {
+    //     if (prevProps.currentUser !== this.props.currentUser) {
+    //         this.setState({user: {}})
+    //     }
+    // }
+
     update(field) {
         return e => this.setState({[field]: e.currentTarget.value});
     }
