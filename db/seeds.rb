@@ -73,3 +73,23 @@ Comment.create!(
     parent_comment_id: 1
 )
 
+Comment.create!(
+    body: 'This is Comment 3',
+    user_id: 3,
+    product_id: 2,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: 'This is Comment 4',
+    user_id: 3,
+    product_id: 3,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: 'This is Comment 5',
+    user_id: 3,
+    product_id: 4,
+    parent_comment_id: nil
+)
