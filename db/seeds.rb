@@ -15,6 +15,32 @@ User.create!(username: 'Otis', password: '123456')
 
 User.create!(username: 'Holly', password: '123456')
 
+User.create!(username: 'Cub', password: '123456')
+
+User.create!(username: 'Chunk', password: '123456')
+
+User.create!(username: 'Popeye', password: '123456')
+
+User.create!(username: 'Gummy', password: '123456')
+
+User.create!(username: 'Sam Mineater', password: '123456')
+
+User.create!(username: 'Barry', password: '123456')
+
+User.create!(username: 'Fozzie', password: '123456')
+
+User.create!(username: 'Ted E. Bear', password: '123456')
+
+User.create!(username: 'Corduroy', password: '123456')
+
+User.create!(username: 'Hank the Tank', password: '123456')
+
+User.create!(username: 'Smokey', password: '123456')
+
+User.create!(username: 'Ursa', password: '123456')
+
+
+
 
 Product.create!(
     title: 'One Fish',
