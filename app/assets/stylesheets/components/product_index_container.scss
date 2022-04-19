@@ -1,7 +1,12 @@
 @import "variables";
 
+#homepage {
+    display: flex;
+}
+
 .product-index {
     display: block;
+    width: 70%;
 }
 
 h1 {
