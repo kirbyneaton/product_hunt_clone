@@ -15,6 +15,32 @@ User.create!(username: 'Otis', password: '123456')
 
 User.create!(username: 'Holly', password: '123456')
 
+User.create!(username: 'Cub', password: '123456')
+
+User.create!(username: 'Chunk', password: '123456')
+
+User.create!(username: 'Popeye', password: '123456')
+
+User.create!(username: 'Gummy', password: '123456')
+
+User.create!(username: 'Sam Mineater', password: '123456')
+
+User.create!(username: 'Barry', password: '123456')
+
+User.create!(username: 'Fozzie', password: '123456')
+
+User.create!(username: 'Ted E. Bear', password: '123456')
+
+User.create!(username: 'Corduroy', password: '123456')
+
+User.create!(username: 'Hank the Tank', password: '123456')
+
+User.create!(username: 'Smokey', password: '123456')
+
+User.create!(username: 'Ursa', password: '123456')
+
+
+
 
 Product.create!(
     title: 'One Fish',
@@ -73,3 +99,23 @@ Comment.create!(
     parent_comment_id: 1
 )
 
+Comment.create!(
+    body: 'This is Comment 3',
+    user_id: 3,
+    product_id: 2,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: 'This is Comment 4',
+    user_id: 3,
+    product_id: 3,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: 'This is Comment 5',
+    user_id: 3,
+    product_id: 4,
+    parent_comment_id: nil
+)

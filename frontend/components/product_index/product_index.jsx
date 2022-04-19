@@ -11,15 +11,21 @@ class ProductIndex extends React.Component {
     render(){
         const { products, deleteProduct, openModal, productId } = this.props;
         return (
-            <div>
-                {/* <h1>Is the next 🐟 here?</h1> */}
-                <h1>Your next favorite thing 👇</h1>
-                <ul className="product-index">
-                    {
-                    products.map(product => <ProductIndexItem 
-                        openModal={openModal} product={product} deleteProduct={deleteProduct} productId={productId} key={product.id}/>)
-                    }
-                </ul>
+            <div id="homepage">
+                <div className="product-index">
+                    {/* <h1>Is the next 🐟 here?</h1> */}
+                    <h1>Your next favorite thing 👇</h1>
+                    <ul>
+                        {
+                            products.map(product => <ProductIndexItem 
+                                openModal={openModal} product={product} deleteProduct={deleteProduct} productId={productId} key={product.id}/>)
+                            }
+                    </ul>
+                </div>
+                <aside>
+                    <h1>sidebar</h1>
+
+                </aside>
             </div>
         )
     }
