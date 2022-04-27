@@ -23,8 +23,8 @@ class ProductIndex extends React.Component {
                     </ul>
                 </div>
                 <aside>
-                    <h1>LATEST PRODUCTS</h1>
-                    <ul>
+                    <h1 id="latest-projects">LATEST PROJECTS ➔</h1>
+                    <ul id="portfolio-projects">
                         <li>
                             My Project 1
                         </li>
