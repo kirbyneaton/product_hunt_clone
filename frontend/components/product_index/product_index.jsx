@@ -25,14 +25,26 @@ class ProductIndex extends React.Component {
                 <aside>
                     <h1 id="latest-projects">LATEST PROJECTS ➔</h1>
                     <ul id="portfolio-projects">
-                        <li>
-                            My Project 1
+                        <li className="my-projects">
+                            <div>
+                                <h3>My Project 1</h3>
+                                <p>Desription</p>
+                            </div>
+                            {/* <image /> */}
                         </li>
-                        <li>
-                            My Project 1
+                        <li className="my-projects">
+                            <div id="project-2">
+                                <h3>My Project 2</h3>
+                                <p>Desription</p>
+                            </div>
+                            {/* <image /> */}
                         </li>
-                        <li>
-                            Portfolio Site
+                        <li className="my-projects">
+                            <div>
+                                <h3>Portfolio Site</h3>
+                                <p>Desription</p>
+                            </div>
+                            {/* <image /> */}
                         </li>
                     </ul>
                 </aside>
