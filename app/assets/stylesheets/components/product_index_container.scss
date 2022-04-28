@@ -89,6 +89,7 @@ aside {
     margin-bottom: 48px;
     border-left: 1px solid #d9e1ec;
     padding-left: 3%;
+    padding-right: 5%;
     width: 30%;
     
 }
@@ -98,16 +99,39 @@ aside {
     color: #4b587c;
     font-size: 12px;
     margin-left: 0;
+    margin-bottom: 24px;
 }
 
 #portfolio-projects {
+    border-bottom: 1px solid #d9e1ec;
     margin-left: 0;
     text-align: left;
 }
 
-// .my-projects {
+.my-projects {
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+    h3 {
+    font-weight: 600;
+    }
+    p {
+    font-size: 12px;
+    }
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}
 
-   
-// }
+h2 {
+    margin-top: 48px;
+    font-weight: bold;
+    color: $dark-grey;
+}
+
+
+
+
 
 

@@ -30,23 +30,25 @@ class ProductIndex extends React.Component {
                                 <h3>My Project 1</h3>
                                 <p>Desription</p>
                             </div>
-                            {/* <image /> */}
+                            <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/product-hunt-logo-orange-960.png" alt="project-picture" />
                         </li>
                         <li className="my-projects">
                             <div id="project-2">
                                 <h3>My Project 2</h3>
                                 <p>Desription</p>
                             </div>
-                            {/* <image /> */}
+                            <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/product-hunt-logo-orange-960.png" alt="project-picture" />
                         </li>
                         <li className="my-projects">
                             <div>
                                 <h3>Portfolio Site</h3>
                                 <p>Desription</p>
                             </div>
-                            {/* <image /> */}
+                            <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/product-hunt-logo-orange-960.png" alt="project-picture" />
                         </li>
                     </ul>
+                    <h2>Launching soon?</h2>
+                    <p>Create your own Upcoming page and start building an audience for your launch 🚀</p>
                 </aside>
             </div>
         )
