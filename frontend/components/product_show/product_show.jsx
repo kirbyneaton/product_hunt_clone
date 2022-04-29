@@ -4,6 +4,11 @@ import {Link} from "react-router-dom";
 class ProductShow extends React.Component {
     constructor(props){
         super(props)
+
+        this.state = {
+            comments: []
+        }
+        this.handleSubmit = this.handleSubmit.bind(this)
     }
     
     componentDidMount() {
@@ -18,6 +23,18 @@ class ProductShow extends React.Component {
             </div>
             
         )
+    }
+
+    update(field) {
+        return e => this.setState({ [field]: e.currentTarget.value });
+    }
+
+    handleSubmit(e) {
+        e.preventDefault();
+        this.props.createComment(this.state.comments)
+        this.setState({
+            comments: ''
+        });
     }
 
     render () {
@@ -48,6 +65,15 @@ class ProductShow extends React.Component {
                     <p id="product-show-description">{currentProduct.description}</p>
                 </div>
                 <h5 id="discussion">DISCUSSION</h5>
+                <form onSubmit = {this.handleSubmit}>
+                    <input className="input"
+                        type="text"
+                        value={this.state.comments}
+                        onChange={this.update('comments')}
+                    />
+                    <button className="submit-comment">Post Comment
+                    </button>
+                </form>
                 <div id="product-show-comments">
                     {this.props.comments.map(this.renderComment)}
 
