@@ -1,4 +1,4 @@
-export const createComment = comment => (
+export const createComment = (comment, productId) => (
     $.ajax({
         method: 'POST',
         url: `/api/products/${productId}/comments`,

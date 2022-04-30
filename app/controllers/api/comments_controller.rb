@@ -1,6 +1,6 @@
 class Api::CommentsController < ApplicationController
 
-    before_action :require_logged_in, only: [:create, :destroy]
+    # before_action :ensure_logged_in, only: [ :destroy]
 
     def index
         @comments = Product.find(params[:product_id]).comments.includes(:user)
@@ -12,10 +12,15 @@ class Api::CommentsController < ApplicationController
     end
 
     def create
-        @comment = current_user.comments.new(comment_params)
+        debugger
+        @comment = Comment.new(comment_params)
+        @comment.user_id = current_user.id
+        @comment.product_id = params[:product_id]
+        # current_user.comments.new(comment_params)
         if @comment.save
             render :show
         else
+            debugger
             render json: @comment.errors.full_messages, status: 401
         end
     end

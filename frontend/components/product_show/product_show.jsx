@@ -6,9 +6,10 @@ class ProductShow extends React.Component {
         super(props)
 
         this.state = {
-            comments: []
-        }
-        this.handleSubmit = this.handleSubmit.bind(this)
+            comment: []
+        } 
+
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
     
     componentDidMount() {
@@ -30,11 +31,33 @@ class ProductShow extends React.Component {
     }
 
     handleSubmit(e) {
+        // debugger
+
+        let comment = {body: this.state.comment};
         e.preventDefault();
-        this.props.createComment(this.state.comments)
-        this.setState({
-            comments: ''
-        });
+        this.props.createComment(comment, this.props.productId);
+
+        // submitComment()
+        //     .then((comment) => {
+        //         const updatedProduct = currentProduct;
+        //         updatedProduct.comments = currentProduct.comments.concat(comment)
+        //         this.props.updateProduct(updatedProduct);
+        //     })
+      
+    }
+
+    renderErrors() {
+        return (
+            <ul>
+                {
+                    this.props.errors.map((err, i) => (
+                        <li key={`error-${i}`}>
+                            {err.message}
+                        </li>
+                    ))
+                }
+            </ul>
+        );
     }
 
     render () {
@@ -64,15 +87,25 @@ class ProductShow extends React.Component {
                     product-show-overview testing
                     <p id="product-show-description">{currentProduct.description}</p>
                 </div>
+
                 <h5 id="discussion">DISCUSSION</h5>
-                <form onSubmit = {this.handleSubmit}>
+                <form onSubmit={this.handleSubmit}>
                     <input className="input"
                         type="text"
-                        value={this.state.comments}
-                        onChange={this.update('comments')}
+                        value={this.state.comment}
+                        onChange={this.update('comment')}
                     />
-                    <button className="submit-comment">Post Comment
+                    <button className="submit-product">Post Comment
                     </button>
+                    {/* <div className='comment-errors'>
+                        {
+                            this.props.errors?.map((err, i) => (
+                                <li key={`error-${i}`}>
+                                    {err.message}
+                                </li>
+                            ))
+                        }
+                    </div> */}
                 </form>
                 <div id="product-show-comments">
                     {this.props.comments.map(this.renderComment)}

@@ -9,6 +9,7 @@ const commentsReducer = (state={},action) => {
             return action.comments;
         case RECEIVE_COMMENT:
             nextState[action.comment.id] = action.comment
+            debugger
             return nextState;
         default:
             return (state);

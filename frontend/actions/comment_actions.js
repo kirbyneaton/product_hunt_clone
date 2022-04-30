@@ -16,8 +16,8 @@ export const receiveComments = (comments) => ({
 
 /////
 
-export const createComment = (comment) => (dispatch) => (
-    CommentApiUtil.createComment(comment)
+export const createComment = (comment, productId) => (dispatch) => (
+    CommentApiUtil.createComment(comment, productId)
         .then(comment => (dispatch(receiveComment(comment))))
 )
 
