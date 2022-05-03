@@ -8,7 +8,8 @@ const commentsReducer = (state={},action) => {
         case RECEIVE_COMMENTS:
             return action.comments;
         case RECEIVE_COMMENT:
-            nextState[action.comment.id] = action.comment
+            debugger
+            nextState[action.comments.id] = action.comment
             debugger
             return nextState;
         default:
