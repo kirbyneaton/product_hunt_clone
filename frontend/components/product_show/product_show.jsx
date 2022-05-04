@@ -6,7 +6,7 @@ class ProductShow extends React.Component {
         super(props)
 
         this.state = {
-            comment: []
+            comment: ''
         } 
 
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -33,11 +33,12 @@ class ProductShow extends React.Component {
     }
 
     handleSubmit(e) {
-        // debugger
-
-        let comment = {body: this.state.comment};
         e.preventDefault();
+        const comment = {body: this.state.comment};
         this.props.createComment(comment, this.props.productId);
+        // this.setState({
+        //     comment: ''
+        // });
 
         // submitComment()
         //     .then((comment) => {

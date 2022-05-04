@@ -12,7 +12,7 @@ class Api::CommentsController < ApplicationController
     end
 
     def create
-        debugger
+        # debugger
         @comment = Comment.new(comment_params)
         @comment.user_id = current_user.id
         @comment.product_id = params[:product_id]

@@ -3,11 +3,13 @@ import * as CommentApiUtil from '../util/comment_api_util';
 export const RECEIVE_COMMENT = 'RECEIVE_COMMENT';
 export const RECEIVE_COMMENTS = 'RECEIVE_COMMENTS';
 
-export const receiveComment = ({ comment, user }) => ({
+export const receiveComment = ( comment, user ) => {
+    debugger
+    return ({
     type: RECEIVE_COMMENT,
     comment,
     user
-});
+})};
 
 export const receiveComments = (comments) => ({
     type: RECEIVE_COMMENTS,
@@ -18,7 +20,7 @@ export const receiveComments = (comments) => ({
 
 export const createComment = (comment, productId) => (dispatch) => (
     CommentApiUtil.createComment(comment, productId)
-        .then(comment => (dispatch(receiveComment(comment))))
+        .then(comment, user => (dispatch(receiveComment(comment, user))))
 )
 
 // export const deleteComment = (comment, productId) => (dispatch) => (
