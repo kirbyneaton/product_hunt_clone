@@ -14,6 +14,15 @@ class ProductIndexItem extends React.Component {
         return deleteProduct(product.id)
     }
 
+
+    componentDidUpdate(prevProps,prevState){
+        // debugger
+        if (prevProps.product.comments?.length !== this.props.product.comments?.length) {
+            this.props.fetchProduct(this.props.productId);
+        }
+    }
+
+
     render() {
         const { product, openModal } = this.props;
         return(

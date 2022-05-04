@@ -8,8 +8,9 @@ class ProductIndex extends React.Component {
         this.props.fetchProducts();
     }
 
+
     render(){
-        const { products, deleteProduct, openModal, productId } = this.props;
+        const { products, deleteProduct, openModal, productId, fetchProduct } = this.props;
         return (
             <div id="homepage">
                 <div className="product-index">
@@ -18,7 +19,7 @@ class ProductIndex extends React.Component {
                     <ul>
                         {
                             products.map(product => <ProductIndexItem 
-                                openModal={openModal} product={product} deleteProduct={deleteProduct} productId={productId} key={product.id}/>)
+                                openModal={openModal} product={product} deleteProduct={deleteProduct} productId={productId} fetchProduct={fetchProduct} key={product.id}/>)
                             }
                     </ul>
                 </div>
