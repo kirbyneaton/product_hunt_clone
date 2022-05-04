@@ -10,7 +10,9 @@ const usersReducer = (state = {}, action) => {
             nextState[action.currentUser.id] = action.currentUser
             return nextState;
         case RECEIVE_COMMENT:
+            // debugger
             nextState[action.user.id] = action.user
+            // debugger
             return nextState;
         default:
             return state;

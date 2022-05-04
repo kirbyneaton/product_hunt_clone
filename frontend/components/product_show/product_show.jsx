@@ -16,6 +16,15 @@ class ProductShow extends React.Component {
         this.props.fetchProductComments(this.props.productId);
     }
 
+    componentDidUpdate(prevProps,prevState){
+        // debugger
+        if (prevProps.comments?.length !== this.props.comments?.length){
+            this.props.fetchProductComments(this.props.productId)
+        }
+        
+
+    }
+
     renderComment(comment){
         return(
             <div id="comment-indv" key={comment.id}>
@@ -36,9 +45,10 @@ class ProductShow extends React.Component {
         e.preventDefault();
         const comment = {body: this.state.comment};
         this.props.createComment(comment, this.props.productId);
-        // this.setState({
-        //     comment: ''
-        // });
+        this.props.openModal(this.props.productId)
+        this.setState({
+            comment: ''
+        });
 
         // submitComment()
         //     .then((comment) => {
