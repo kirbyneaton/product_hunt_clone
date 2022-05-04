@@ -21,8 +21,10 @@ class ProductShow extends React.Component {
             <div id="comment-indv" key={comment.id}>
                 <p id="comment-username">🐻 {comment.user.username}</p>
                 <p id="comment-body">{comment.body}</p>
+                {/* {(comment.user_id===this.props.currentUserId) ? 
+                    <button onClick={() => this.props.deleteComment(currentComment.id)}>Delete Comment</button> : <p>none</p>
+                } */}
             </div>
-            
         )
     }
 
@@ -95,7 +97,7 @@ class ProductShow extends React.Component {
                         value={this.state.comment}
                         onChange={this.update('comment')}
                     />
-                    <button className="submit-product">Post Comment
+                    <button className="submit-product">SEND
                     </button>
                     {/* <div className='comment-errors'>
                         {
@@ -109,6 +111,7 @@ class ProductShow extends React.Component {
                 </form>
                 <div id="product-show-comments">
                     {this.props.comments.map(this.renderComment)}
+                    
 
                     {/* <p>{!(this.props.comments) ? "loading" : this.props.comments.toString()}</p>  */}
                 </div>

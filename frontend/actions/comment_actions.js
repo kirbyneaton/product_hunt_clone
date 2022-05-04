@@ -21,6 +21,10 @@ export const createComment = (comment, productId) => (dispatch) => (
         .then(comment => (dispatch(receiveComment(comment))))
 )
 
+// export const deleteComment = (comment, productId) => (dispatch) => (
+//     CommentApiUtil.deleteComment(comment, productId)
+//         .then(comment => (dispatch(receiveComment(comment))))
+// )
 
 export const fetchProductComments = (productId) => (dispatch) => (
     CommentApiUtil.fetchProductComments(productId)

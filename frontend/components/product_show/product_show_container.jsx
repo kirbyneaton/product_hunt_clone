@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import { fetchProduct, deleteProduct, updateProduct } from "../../actions/product_actions";
 import ProductShow from './product_show';
 import { closeModal } from "../../actions/modal_actions";
-import { fetchProductComments, createComment } from "../../actions/comment_actions";
+import { fetchProductComments, createComment, deleteComment} from "../../actions/comment_actions";
 
 const mapStateToProps = (state, ownProps, productId) => {
     
@@ -13,6 +13,7 @@ const mapStateToProps = (state, ownProps, productId) => {
         productId: ownProps.productId,
         // currentProduct: Object.values(state.entities.products)[productId],
         comments: Object.values(state.entities.comments),
+        currentUserId: state.session.id
         // navLink: <Link to="/signup">Sign Up!</Link>
     };
 };
@@ -22,6 +23,7 @@ const mapDispatchToProps = (dispatch) => ({
     closeModal: () => dispatch(closeModal()),
     fetchProductComments: (productId) => (dispatch(fetchProductComments(productId))),
     createComment: (comment, productId) => (dispatch(createComment(comment, productId))),
+    // deleteComment: (comment, productId) => (dispatch(deleteComment(comment, productId))),
     updateProduct: (product) => dispatch(updateProduct(product)),
     deleteProduct: (productId) => {
         (dispatch(closeModal()));
