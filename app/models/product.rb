@@ -5,4 +5,7 @@ class Product < ApplicationRecord
     has_many :comments
     belongs_to :user
 
+    def comment_count
+        @comment_count = comments.length
+    end
 end

@@ -10,29 +10,34 @@ class ProductShow extends React.Component {
         } 
 
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.renderComment = this.renderComment.bind(this);
     }
     
     componentDidMount() {
         this.props.fetchProductComments(this.props.productId);
     }
 
-    componentDidUpdate(prevProps,prevState){
-        // debugger
-        if (prevProps.comments?.length !== this.props.comments?.length){
-            this.props.fetchProductComments(this.props.productId)
-        }
-        
+    // componentWillUnmount() {
+    //     this.props.fetchProducts();
+    // }
 
-    }
+
+    // componentDidUpdate(prevProps,prevState){
+    //     debugger
+    //     if (prevProps.comments?.length !== this.props.comments?.length){
+            
+    //     }
+    // }
 
     renderComment(comment){
+        // debugger
         return(
             <div id="comment-indv" key={comment.id}>
                 <p id="comment-username">🐻 {comment.user.username}</p>
                 <p id="comment-body">{comment.body}</p>
-                {/* {(comment.user_id===this.props.currentUserId) ? 
-                    <button onClick={() => this.props.deleteComment(currentComment.id)}>Delete Comment</button> : <p>none</p>
-                } */}
+                {(comment.user_id===this.props.currentUserId) ? 
+                    <button onClick={() => this.props.deleteComment(comment.id, this.props.productId)}>Delete Comment</button> : ""
+                }
             </div>
         )
     }

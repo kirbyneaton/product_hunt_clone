@@ -2,6 +2,7 @@ import * as CommentApiUtil from '../util/comment_api_util';
 
 export const RECEIVE_COMMENT = 'RECEIVE_COMMENT';
 export const RECEIVE_COMMENTS = 'RECEIVE_COMMENTS';
+export const REMOVE_COMMENT = 'REMOVE_COMMENT';
 
 export const receiveComment = ( comment, user ) => {
     // debugger
@@ -16,6 +17,11 @@ export const receiveComments = (comments) => ({
     comments
 })
 
+export const removeComment = (commentId) => ({
+    type: REMOVE_COMMENT,
+    commentId
+});
+
 /////
 
 export const createComment = (comment, productId) => (dispatch) => {
@@ -26,10 +32,10 @@ export const createComment = (comment, productId) => (dispatch) => {
     )
 }
 
-// export const deleteComment = (comment, productId) => (dispatch) => (
-//     CommentApiUtil.deleteComment(comment, productId)
-//         .then(comment => (dispatch(receiveComment(comment))))
-// )
+export const deleteComment = (commentId, productId) => (dispatch) => (
+    CommentApiUtil.deleteComment(commentId, productId)
+        .then(comment => (dispatch(removeComment(commentId))))
+)
 
 export const fetchProductComments = (productId) => (dispatch) => (
     CommentApiUtil.fetchProductComments(productId)

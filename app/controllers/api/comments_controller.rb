@@ -20,8 +20,18 @@ class Api::CommentsController < ApplicationController
         if @comment.save
             render :show
         else
-            debugger
+            # debugger
             render json: @comment.errors.full_messages, status: 401
+        end
+    end
+
+    def destroy
+        @comment = Comment.find(params[:id])
+        debugger
+        if @comment && @comment.destroy
+            render json: {}, status: 200
+        else
+            render json: @product.errors.full_messages, status: 422
         end
     end
 

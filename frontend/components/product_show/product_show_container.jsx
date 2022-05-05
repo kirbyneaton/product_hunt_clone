@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { fetchProduct, deleteProduct, updateProduct } from "../../actions/product_actions";
+import { fetchProduct, fetchProducts, deleteProduct, updateProduct } from "../../actions/product_actions";
 import ProductShow from './product_show';
 import { closeModal, openModal } from "../../actions/modal_actions";
 import { fetchProductComments, createComment, deleteComment} from "../../actions/comment_actions";
@@ -20,11 +20,16 @@ const mapStateToProps = (state, ownProps, productId) => {
 
 const mapDispatchToProps = (dispatch) => ({
     fetchProduct: (id) => (dispatch(fetchProduct(id))),
-    closeModal: () => dispatch(closeModal()),
+    closeModal: (productId) => (dispatch(closeModal())),
     openModal: (id) => dispatch(openModal(id)),
+    fetchProducts: () => dispatch(fetchProducts()),
     fetchProductComments: (productId) => (dispatch(fetchProductComments(productId))),
     createComment: (comment, productId) => (dispatch(createComment(comment, productId))),
-    // deleteComment: (comment, productId) => (dispatch(deleteComment(comment, productId))),
+    deleteComment: (commentId, productId) => {
+        
+        (dispatch(deleteComment(commentId, productId))),
+        (dispatch(openModal(productId)));
+    },
     updateProduct: (product) => dispatch(updateProduct(product)),
     deleteProduct: (productId) => {
         (dispatch(closeModal()));
