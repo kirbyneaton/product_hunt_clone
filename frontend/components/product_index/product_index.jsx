@@ -3,12 +3,30 @@ import ProductIndexItem from "./product_index_item";
 
 
 class ProductIndex extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            commentCount: undefined
+        };
+
+        // this.handleSubmit = this.handleSubmit.bind(this);
+    }
 
     componentDidMount(){
         this.props.fetchProducts();
-        this.props.fetchProductComments(this.props.productId);
+        // this.props.fetchProductComments(this.props.poduct.id);
     }
 
+
+    // componentDidUpdate(prevProps, prevState) {
+    //     // debugger
+    //     if (prevProps.comments?.length !== this.state.comments?.length) {
+    //         // this.props.fetchProductComments(this.productId);
+    //         // this.render();
+    //         this.setState({ commentCount: this.props.comments.length });
+    //     }
+    // } 
 
     render(){
         const { products, deleteProduct, openModal, productId, fetchProduct, comments, fetchProductComments } = this.props;

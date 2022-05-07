@@ -26,7 +26,6 @@ const mapDispatchToProps = (dispatch) => ({
     fetchProductComments: (productId) => (dispatch(fetchProductComments(productId))),
     createComment: (comment, productId) => (dispatch(createComment(comment, productId))),
     deleteComment: (commentId, productId) => {
-        
         (dispatch(deleteComment(commentId, productId))),
         (dispatch(openModal(productId)));
     },

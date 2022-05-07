@@ -17,14 +17,14 @@ class ProductShow extends React.Component {
         this.props.fetchProductComments(this.props.productId);
     }
 
-    // componentWillUnmount() {
-    //     debugger
-    //     this.render();
-    //     // this.props.fetchProductComments(this.props.productId);
-    // }
+    componentWillUnmount() {
+        // debugger
+        // this.render();
+        this.props.fetchProductComments(this.props.productId);
+    }
 
     componentDidUpdate(prevProps){
-        debugger
+        // debugger
         if (prevProps.comments?.length !== this.props.comments?.length){
             this.props.fetchProductComments(this.props.productId);
         }
