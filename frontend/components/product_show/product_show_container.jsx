@@ -20,7 +20,7 @@ const mapStateToProps = (state, ownProps, productId) => {
 
 const mapDispatchToProps = (dispatch) => ({
     fetchProduct: (id) => (dispatch(fetchProduct(id))),
-    closeModal: (productId) => (dispatch(closeModal())),
+    closeModal: () => (dispatch(closeModal())),
     openModal: (id) => dispatch(openModal(id)),
     fetchProducts: () => dispatch(fetchProducts()),
     fetchProductComments: (productId) => (dispatch(fetchProductComments(productId))),

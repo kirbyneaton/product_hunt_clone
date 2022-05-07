@@ -21,6 +21,18 @@ class Api::ProductsController < ApplicationController
         end
     end
 
+    def update
+        # debugger
+        @product = Product.find(params[:id])
+        if @product && @product.update_attributes(product_params)
+            render :show
+        elsif !@product
+            render json: ['Product not found'], status: 400
+        else
+            render json: @product.errors.full_messages, status: 401
+        end
+    end
+
     def destroy
         @product = Product.find(params[:id])
         if @product && @product.destroy

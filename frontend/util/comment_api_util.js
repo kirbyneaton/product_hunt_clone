@@ -19,6 +19,7 @@ export const fetchProductComments = productId => (
 export const deleteComment = (commentId, productId) => (
     $.ajax({
         method: 'DELETE',
-        url: `/api/products/${productId}/comments/${commentId}`
+        url: `/api/products/${productId}/comments/${commentId}`,
+        data: { commentId, productId}
     })
 );

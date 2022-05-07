@@ -21,9 +21,10 @@ const productsReducer = (state={},action) => {
             // debugger
             return nextState;
         case REMOVE_COMMENT:
-            // debugger
-            delete nextState[action.commentId];
-            return nextState;
+            debugger
+            delete nextState[action.productId].comments.find(comment => (comment.id === action.commentId))
+            debugger
+            return (nextState);
         default:
             return (state);
     }

@@ -18,16 +18,17 @@ class ProductShow extends React.Component {
     }
 
     // componentWillUnmount() {
-    //     this.props.fetchProducts();
-    // }
-
-
-    // componentDidUpdate(prevProps,prevState){
     //     debugger
-    //     if (prevProps.comments?.length !== this.props.comments?.length){
-            
-    //     }
+    //     this.render();
+    //     // this.props.fetchProductComments(this.props.productId);
     // }
+
+    componentDidUpdate(prevProps){
+        debugger
+        if (prevProps.comments?.length !== this.props.comments?.length){
+            this.props.fetchProductComments(this.props.productId);
+        }
+    }
 
     renderComment(comment){
         // debugger
