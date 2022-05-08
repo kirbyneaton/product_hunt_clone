@@ -11,6 +11,7 @@ class ProductShow extends React.Component {
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.renderComment = this.renderComment.bind(this);
+        this.renderErrors = this.renderErrors.bind(this);
     }
     
     componentDidMount() {
@@ -116,15 +117,16 @@ class ProductShow extends React.Component {
                     />
                     <button className="submit-product">SEND
                     </button>
-                    {/* <div className='comment-errors'>
+                    <div className='comment-errors'>
                         {
-                            this.props.errors?.map((err, i) => (
-                                <li key={`error-${i}`}>
-                                    {err.message}
-                                </li>
-                            ))
+                            this.renderErrors()
+                            // this.props.errors?.map((err, i) => (
+                            //     <li key={`error-${i}`}>
+                            //         {err.message}
+                            //     </li>
+                            // ))
                         }
-                    </div> */}
+                    </div>
                 </form>
                 <div id="product-show-comments">
                     {this.props.comments.map(this.renderComment)}
