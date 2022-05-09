@@ -23,7 +23,7 @@ const productsReducer = (state={},action) => {
         case REMOVE_COMMENT:
             // debugger
 
-            let arr = nextState[action.productId].comments.filter(comment => (comment.id !== action.commentId));
+            nextState[action.productId].comments.filter(comment => (comment.id !== action.commentId));
         
             // debugger
             return (nextState);

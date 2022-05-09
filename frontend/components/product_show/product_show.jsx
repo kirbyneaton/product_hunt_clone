@@ -110,6 +110,7 @@ class ProductShow extends React.Component {
 
                 <h5 id="discussion">DISCUSSION</h5>
                 <form className="comment-form" onSubmit={this.handleSubmit}>
+                    <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/product-hunt-logo-orange-960.png" alt="current-user-picture" />
                     <input className="input comment-input"
                         type="text"
                         value={this.state.comment}
@@ -117,7 +118,7 @@ class ProductShow extends React.Component {
                     />
                     <button className="submit-product submit-comment">SEND
                     </button>
-                    <div className='comment-errors'>
+                    {/* <div className='comment-errors'>
                         {
                             
                             this.renderErrors
@@ -127,7 +128,7 @@ class ProductShow extends React.Component {
                             //     </li>
                             // ))
                         }
-                    </div>
+                    </div> */}
                 </form>
                 <div id="product-show-comments">
                     {this.props.comments.map(this.renderComment)}
