@@ -110,12 +110,12 @@ class ProductShow extends React.Component {
 
                 <h5 id="discussion">DISCUSSION</h5>
                 <form className="comment-form" onSubmit={this.handleSubmit}>
-                    <input className="input"
+                    <input className="input comment-input"
                         type="text"
                         value={this.state.comment}
                         onChange={this.update('comment')}
                     />
-                    <button className="submit-product">SEND
+                    <button className="submit-product submit-comment">SEND
                     </button>
                     <div className='comment-errors'>
                         {
