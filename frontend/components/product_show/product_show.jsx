@@ -109,7 +109,7 @@ class ProductShow extends React.Component {
                 </div>
 
                 <h5 id="discussion">DISCUSSION</h5>
-                <form onSubmit={this.handleSubmit}>
+                <form className="comment-form" onSubmit={this.handleSubmit}>
                     <input className="input"
                         type="text"
                         value={this.state.comment}
@@ -119,7 +119,8 @@ class ProductShow extends React.Component {
                     </button>
                     <div className='comment-errors'>
                         {
-                            this.renderErrors()
+                            
+                            this.renderErrors
                             // this.props.errors?.map((err, i) => (
                             //     <li key={`error-${i}`}>
                             //         {err.message}
