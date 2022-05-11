@@ -38,7 +38,7 @@ class ProductIndex extends React.Component {
                     <ul>
                         {
                             products.map(product => <ProductIndexItem 
-                                openModal={openModal} product={product} deleteProduct={deleteProduct} productId={productId} fetchProduct={fetchProduct} comments={comments} fetchProductComments={fetchProductComments} key={product.id}/>)
+                                openModal={openModal} product={product} deleteProduct={deleteProduct} productId={productId} fetchProduct={fetchProduct} comments={product.comments} fetchProductComments={fetchProductComments} key={product.id}/>)
                             }
                     </ul>
                 </div>

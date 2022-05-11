@@ -44,8 +44,8 @@ class ProductIndexItem extends React.Component {
                     <div className="product-text-container">
                         <p className="product-title">{product.title}</p>
                         <p className="product-subtitle">{product.subtitle}</p>
-                        {/* <p className="comment-count">🗨️    {comments.length}</p> */}
-                        <p className="comment-count">🗨️    {product.comment_count}</p>
+                        <p className="comment-count">🗨️    {comments.length}</p>
+                        {/* <p className="comment-count">🗨️    {product.comment_count}</p> */}
                     </div>
                 </li>
             </div>
