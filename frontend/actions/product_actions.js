@@ -50,7 +50,8 @@ export const createProduct = (product) => (dispatch) => (
 
 export const updateProduct = (product) => (dispatch) => (
     ProductApiUtil.updateProduct(product)
-        .then(product => (dispatch(receiveProduct(product))), error => (dispatch(receiveErrors(error.responseJSON))))
+        .then(product => (dispatch(receiveProduct(product))))
+        // , error => (dispatch(receiveErrors(error.responseJSON))))
 )
 
 export const deleteProduct = (productId) => (dispatch) => (

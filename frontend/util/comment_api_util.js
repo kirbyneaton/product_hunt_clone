@@ -1,10 +1,13 @@
-export const createComment = comment => (
+export const createComment = (comment, productId) => {
+    // debugger
+return(
     $.ajax({
         method: 'POST',
         url: `/api/products/${productId}/comments`,
         data: { comment }
     })
 );
+}
 
 export const fetchProductComments = productId => (
     $.ajax({
@@ -13,3 +16,10 @@ export const fetchProductComments = productId => (
     })
 );
 
+export const deleteComment = (commentId, productId) => (
+    $.ajax({
+        method: 'DELETE',
+        url: `/api/products/${productId}/comments/${commentId}`,
+        data: { commentId, productId}
+    })
+);
