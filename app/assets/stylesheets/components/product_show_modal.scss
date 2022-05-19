@@ -159,26 +159,47 @@ form > img {
    position: relative;
    top: -1px;
       #comment-indv {
-         margin-left: 30px;
+         margin-left: 14.5px;
          margin-top: 20px;
          border-left: 3px solid rgb(240, 240, 240); 
+         display: flex;
+         // padding-left: 24px;
 
          img {
             width: 30px;
             height: 30px;
-            margin: 0;
+            position: relative;left: -16.5px;
             border-radius: 50%;
-            align-self: center;
-
+            margin: 0;
+         }
+      
+         .comment-text {
+            margin-left: 0px;
+            align-self: left;
+            align-content: left;
+            position: relative;left: -16.5px;
+         
+            #comment-username {
+               font-weight: 700;
+               color: $dark-grey;
+               margin-left: 10px;
+               font-size: 13px;
+            }
+            #comment-body {
+               margin-left: 10px;
+               font-size: 13px;
+            }
+            #delete-comment {
+               font-weight: 700;
+               color: $text-grey;
+               margin-left: 10px;
+               margin-top: 10px;
+               font-size: 11px;
+               &:hover {
+                  color: $orange;
+                  cursor: pointer;
+               }
+            }
          }
       }
-         #comment-username {
-            font-weight: 700;
-            color: $dark-grey;
-            margin-left: 10px;
-         }
-         #comment-body {
-            margin-left: 10px;
-
-         }
  }
