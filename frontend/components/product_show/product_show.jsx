@@ -35,7 +35,7 @@ class ProductShow extends React.Component {
         // debugger
         return(
             <div id="comment-indv" key={comment.id}>
-                <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/product-hunt-logo-orange-960.png" alt="current-user-picture" />
+                <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fat_bear.jpeg" alt="default-user-picture" />
                 <div className="comment-text">
                     <p id="comment-username">{comment.user.username}</p>
                     <p id="comment-body">{comment.body}</p>
