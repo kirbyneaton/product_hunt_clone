@@ -35,11 +35,14 @@ class ProductShow extends React.Component {
         // debugger
         return(
             <div id="comment-indv" key={comment.id}>
-                <p id="comment-username">🐻 {comment.user.username}</p>
-                <p id="comment-body">{comment.body}</p>
-                {(comment.user_id===this.props.currentUserId) ? 
-                    <button onClick={() => this.props.deleteComment(comment.id, this.props.productId)}>Delete Comment</button> : ""
-                }
+                <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/product-hunt-logo-orange-960.png" alt="current-user-picture" />
+                <div className="comment-text">
+                    <p id="comment-username">🐻 {comment.user.username}</p>
+                    <p id="comment-body">{comment.body}</p>
+                    {(comment.user_id===this.props.currentUserId) ? 
+                        <button onClick={() => this.props.deleteComment(comment.id, this.props.productId)}>Delete Comment</button> : ""
+                    }
+                </div>
             </div>
         )
     }
@@ -109,7 +112,8 @@ class ProductShow extends React.Component {
                 </div>
 
                 <h5 id="discussion">DISCUSSION</h5>
-                <form className="comment-form" onSubmit={this.handleSubmit}>
+                <div>
+                    <form className="comment-form" onSubmit={this.handleSubmit}>
                     <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/product-hunt-logo-orange-960.png" alt="current-user-picture" />
                     <input className="input comment-input"
                         type="text"
@@ -118,18 +122,20 @@ class ProductShow extends React.Component {
                     />
                     <button className="submit-product submit-comment">SEND
                     </button>
-                    {/* <div className='comment-errors'>
-                        {
-                            
-                            this.renderErrors
-                            // this.props.errors?.map((err, i) => (
-                            //     <li key={`error-${i}`}>
-                            //         {err.message}
-                            //     </li>
-                            // ))
-                        }
-                    </div> */}
-                </form>
+                   
+                    </form>
+                    <div className='comment-errors'>
+                    {
+
+                        this.renderErrors
+                        // this.props.errors?.map((err, i) => (
+                        //     <li key={`error-${i}`}>
+                        //         {err.message}
+                        //     </li>
+                        // ))
+                    }
+                    </div>
+                </div>
                 <div id="product-show-comments">
                     {this.props.comments.map(this.renderComment)}
                     
