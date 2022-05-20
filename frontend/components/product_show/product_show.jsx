@@ -38,9 +38,11 @@ class ProductShow extends React.Component {
                 <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fat_bear.jpeg" alt="default-user-picture" />
                 <div className="comment-text">
                     <p id="comment-username">{comment.user.username}</p>
+
+                    {/* placeholder text What do you think of this fish? */}
                     <p id="comment-body">{comment.body}</p>
                     {(comment.user_id===this.props.currentUserId) ? 
-                        <button id="delete-comment" onClick={() => this.props.deleteComment(comment.id, this.props.productId)}>Delete Comment</button> : ""
+                        <button id="delete-comment" onClick={() => this.props.deleteComment(comment.id, this.props.productId)}>Delete</button> : ""
                     }
                 </div>
             </div>
@@ -114,7 +116,7 @@ class ProductShow extends React.Component {
                 <h5 id="discussion">DISCUSSION</h5>
                 <div>
                     <form className="comment-form" onSubmit={this.handleSubmit}>
-                    <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/product-hunt-logo-orange-960.png" alt="current-user-picture" />
+                    <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fat_bear.jpeg" alt="current-user-picture" />
                     <input className="input comment-input"
                         type="text"
                         value={this.state.comment}
