@@ -24,8 +24,8 @@ class Api::CommentsController < ApplicationController
                 render json: @comment.errors.full_messages, status: 401
             end
         else
-            debugger
-            render json: {errors: "Log in to comment"}, status: 401
+            # debugger
+            render json: ["Log in to comment"], status: 401
         end
     end
 
