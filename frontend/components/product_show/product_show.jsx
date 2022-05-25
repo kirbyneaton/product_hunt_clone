@@ -70,12 +70,13 @@ class ProductShow extends React.Component {
     }
 
     renderErrors() {
+        debugger
         return (
             <ul>
                 {
                     this.props.errors.map((err, i) => (
                         <li key={`error-${i}`}>
-                            {err.message}
+                            {err}
                         </li>
                     ))
                 }
@@ -114,28 +115,24 @@ class ProductShow extends React.Component {
                 <h5 id="discussion">DISCUSSION</h5>
                 <div>
                     <form className="comment-form" onSubmit={this.handleSubmit}>
-                    <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fat_bear.jpeg" alt="current-user-picture" />
-                    <input className="input comment-input"
-                        type="text"
-                        value={this.state.comment}
-                        onChange={this.update('comment')}
-                        placeholder="What do you think of this fish?"
-                    />
-                    <button className="submit-product submit-comment">SEND
-                    </button>
-                   
+                        <div id="comment-box">
+                            <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fat_bear.jpeg" alt="current-user-picture" />
+                            <input className="input comment-input"
+                                type="text"
+                                value={this.state.comment}
+                                onChange={this.update('comment')}
+                                placeholder="What do you think of this fish?"
+                            />
+                            <button className="submit-product submit-comment">SEND
+                            </button>
+                        </div>
+                        {this.props.errors ?
+                        <div className="comment-errors">{this.props.errors}
+                        </div> :
+                        null
+                        }
                     </form>
-                    <div className='comment-errors'>
-                    {
-
-                        this.renderErrors
-                        // this.props.errors?.map((err, i) => (
-                        //     <li key={`error-${i}`}>
-                        //         {err.message}
-                        //     </li>
-                        // ))
-                    }
-                    </div>
+                
                 </div>
                 <div id="product-show-comments">
                     {this.props.comments.map(this.renderComment)}

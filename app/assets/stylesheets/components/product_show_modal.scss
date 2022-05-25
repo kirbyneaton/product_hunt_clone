@@ -85,7 +85,7 @@ img#product-photo {
  }
 
  .comment-form {
-   display: flex;
+   // display: flex;
    background-color: white;
    margin-left: 2%;
    padding: 20px 2%;
@@ -93,10 +93,15 @@ img#product-photo {
    border: 1px solid $border-grey;
    border-top-left-radius: 4px;
    border-top-right-radius: 4px;
-   justify-content: space-between;
+   // justify-content: space-between;
  }
 
-form > img {
+ #comment-box {
+   justify-content: space-between;
+   display: flex;
+ }
+
+form img {
    width: 30px;
    height: 30px;
    margin: 0;
@@ -132,6 +137,16 @@ form > img {
     align-self: center;
     align-items: center;
     margin:0;
+ }
+
+ .comment-errors {
+    text-align: left;
+    font-size: 14px;
+    color: red;
+    font-weight: 600;
+    margin-top: 10px;
+   //  margin-left: 38px;
+    margin-left: 9%;
  }
 
  #discussion {
