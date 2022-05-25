@@ -38,8 +38,6 @@ class ProductShow extends React.Component {
                 <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fat_bear.jpeg" alt="default-user-picture" />
                 <div className="comment-text">
                     <p id="comment-username">{comment.user.username}</p>
-
-                    {/* placeholder text What do you think of this fish? */}
                     <p id="comment-body">{comment.body}</p>
                     {(comment.user_id===this.props.currentUserId) ? 
                         <button id="delete-comment" onClick={() => this.props.deleteComment(comment.id, this.props.productId)}>Delete</button> : ""
@@ -121,6 +119,7 @@ class ProductShow extends React.Component {
                         type="text"
                         value={this.state.comment}
                         onChange={this.update('comment')}
+                        placeholder="What do you think of this fish?"
                     />
                     <button className="submit-product submit-comment">SEND
                     </button>
