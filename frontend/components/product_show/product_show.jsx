@@ -20,8 +20,8 @@ class ProductShow extends React.Component {
 
     componentWillUnmount() {
         // debugger
-        // this.render();
         this.props.fetchProductComments(this.props.productId);
+        // this.props.removeErrors();
     }
 
     componentDidUpdate(prevProps){
