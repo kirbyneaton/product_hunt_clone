@@ -1,3 +1,4 @@
+import { REMOVE_ERRORS } from '../actions/comment_actions';
 import { RECEIVE_SESSION_ERRORS, RECEIVE_CURRENT_USER} from '../actions/session_actions';
 
 // errors is array
@@ -7,6 +8,8 @@ const sessionErrorsReducer = (state = [], action) => {
         case RECEIVE_SESSION_ERRORS:
             return action.errors;
         case RECEIVE_CURRENT_USER:
+            return [];
+        case REMOVE_ERRORS:
             return [];
         default:
             return state;

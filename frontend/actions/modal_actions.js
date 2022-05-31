@@ -8,12 +8,13 @@ export const openModal = (modal) => ({
     modal
 });
 
-export const hideModal = () => ({
+export const onlyCloseModal = () => ({
     type: CLOSE_MODAL
 });
 
 ///
 
+//closeModal really means closeModalAndClearErrors
 export const closeModal = () => (dispatch) => {dispatch(removeErrors());
-(dispatch(hideModal()))
+(dispatch(onlyCloseModal()))
 };
