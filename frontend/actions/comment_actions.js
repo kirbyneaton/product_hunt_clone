@@ -31,6 +31,7 @@ export const receiveCommentErrors = errors => ({
     errors
 });
 
+// not just for comments
 export const removeErrors = () => ({
     type: REMOVE_ERRORS
 });
