@@ -10,6 +10,10 @@ class ProductForm extends React.Component {
         this.goToIndex = this.goToIndex.bind(this);
     }
 
+    componentWillUnmount() {
+        this.props.removeErrors()
+    }
+
     //returning correctly?
     update(field) {
         return e => {
