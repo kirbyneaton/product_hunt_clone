@@ -2,6 +2,7 @@ import {connect} from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import ProductForm from './product_form';
 import { createProduct } from '../../actions/product_actions';
+import { removeErrors } from '../../actions/comment_actions';
 
 const mapStateToProps = (state) => ({
     product: {
@@ -16,7 +17,8 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-    action: (product) => dispatch(createProduct(product))
+    action: (product) => dispatch(createProduct(product)),
+    removeErrors: () => dispatch(removeErrors())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductForm);

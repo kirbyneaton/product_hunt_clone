@@ -14,7 +14,8 @@ const mapStateToProps = (state, ownProps, productId) => {
         // currentProduct: Object.values(state.entities.products)[productId],
         comments: Object.values(state.entities.comments),
         currentUserId: state.session.id,
-        errors: state.errors.session,
+        // errors: state.errors.session,
+        errors: state.errors.comment,
         // navLink: <Link to="/signup">Sign Up!</Link>
     };
 };
