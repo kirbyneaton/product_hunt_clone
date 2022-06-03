@@ -20,6 +20,7 @@ const App = () => (
                 <a href="https://angel.co/u/kirby-neaton" target="_blank" className="header-link">AngelList</a>
             </nav>
             <div id="login-corner">
+                {/* conditionally show link if currentUser exists */}
                 <Link id="submit-new-fish" to='/products'><button id="submit-product">Submit New Fish</button></Link>
                 {/* ^this should 'Link to' the route for the create/edit container & add route below in switch? 'Route path=' */}
                 <div className="greeting-cont"><GreetingContainer /></div>
