@@ -8,6 +8,8 @@ import {Route, Switch, Link} from 'react-router-dom';
 import Modal from "./modal/modal";
 import CreateProductFormContainer from "./product_form/create_product_form_container";
 import EditProductFormContainer from "./product_form/edit_product_form_container";
+import configureStore from "../store/store";
+
 
 const App = () => (
     <div>
@@ -21,7 +23,11 @@ const App = () => (
             </nav>
             <div id="login-corner">
                 {/* conditionally show link if currentUser exists */}
-                <Link id="submit-new-fish" to='/products'><button id="submit-product">Submit New Fish</button></Link>
+                {true ? <Link id="submit-new-fish" to='/products'><button id="submit-product">"{Object.values(configureStore?.getState()?.entities?.users?.id)}"</button></Link> : null}
+
+                {/* {console.log(configureStore()?.getState()?.session.id)} */}
+                
+                
                 {/* ^this should 'Link to' the route for the create/edit container & add route below in switch? 'Route path=' */}
                 <div className="greeting-cont"><GreetingContainer /></div>
             </div>
@@ -36,5 +42,7 @@ const App = () => (
        
     </div>
 );
+
+const store1 = configureStore;
 
 export default App;
