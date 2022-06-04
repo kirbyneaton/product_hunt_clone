@@ -100,7 +100,6 @@ class ProductShow extends React.Component {
                     <div className="product-show-text-container">
                         <h1 id="product-show-title">{currentProduct.title}</h1>
                         <h2 id="product-show-subtitle">{currentProduct.subtitle}</h2>
-                        {/* conditionally show if currentUser is the product creator */}
                         {currentProduct.user_id === this.props.currentUserId ?
                         <div className="edit-delete">
                             <Link to={`/products/${currentProduct.id}/edit`}><button onClick={this.props.closeModal} id="edit-product">Edit Fish</button></Link>
