@@ -22,12 +22,6 @@ const App = () => (
                 <a href="https://angel.co/u/kirby-neaton" target="_blank" className="header-link">AngelList</a>
             </nav>
             <div id="login-corner">
-                {/* conditionally show link if currentUser exists */}
-                {true ? <Link id="submit-new-fish" to='/products'><button id="submit-product">"{Object.values(configureStore?.getState()?.entities?.users?.id)}"</button></Link> : null}
-
-                {/* {console.log(configureStore()?.getState()?.session.id)} */}
-                
-                
                 {/* ^this should 'Link to' the route for the create/edit container & add route below in switch? 'Route path=' */}
                 <div className="greeting-cont"><GreetingContainer /></div>
             </div>
@@ -43,6 +37,6 @@ const App = () => (
     </div>
 );
 
-const store1 = configureStore;
+// const store1 = configureStore;
 
 export default App;
