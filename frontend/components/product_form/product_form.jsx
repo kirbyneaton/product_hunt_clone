@@ -23,12 +23,14 @@ class ProductForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
+        // debugger
         this.props.action(this.state)
             .then(() => this.goToIndex());
     }
 
 
     goToIndex() {
+        // debugger
         this.props.history.push('/');
     }
 
