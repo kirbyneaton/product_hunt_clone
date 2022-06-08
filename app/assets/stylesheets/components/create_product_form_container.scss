@@ -1,5 +1,25 @@
 @import "variables";
 
+.create-edit-form-page {
+    display: flex;
+}
+
+div.submit-product-background {
+    width: 45%;
+    height: 100vh;
+    background-color: #fef6f2;
+
+}
+
+img.submit-product-background {
+    width: 100%;
+    height: auto;
+    background-color: #fef6f2;
+    border-radius: 0%;
+    position: relative;
+    top: 100px;
+}
+
 form {
     align-items: left;
     justify-content: left;
@@ -9,34 +29,56 @@ form {
 
 #create-product {
     margin-left: 0px;
-   
-    
+    font-size: 32px;
+    margin-bottom: 24px;
 }
 
 form label{
     display: block;
     width: 0em;
     margin-left: 0px;
-    
+    color: $dark-grey;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
 .input { 
     display: block;
     align-self: left;
     margin-left: 0px;
+    color: $text-grey;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid $border-grey;
+    &:focus {
+            border-color: rgba(47,160,255,.4);
+            outline: none;
+            box-shadow: 0px 0px 3px 3px rgba(0, 17, 255, 0.068)
+            ;
+        }
+    
 }
 
 textarea {
     width: 420px;
     height: 80px;
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid $border-grey;
+        &:focus {
+            border-color: rgba(47,160,255,.4);
+            outline: none;
+            box-shadow: 0px 0px 3px 3px rgba(0, 17, 255, 0.068)
+            ;
+        }
 }
 
 .submit-product {
     display: block;
     color: white;
     padding: 8px;
-    margin-top: 15px;
+    margin-top: 24px;
     background-color: $orange;
     justify-content: center;
     align-content: center;

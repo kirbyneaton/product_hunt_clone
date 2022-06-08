@@ -48,7 +48,10 @@ class ProductForm extends React.Component {
 
     render() {
         return(
-            <div>
+            <div className="create-edit-form-page">
+                <div className="submit-product-background">
+                    <img className="submit-product-background" src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/submit-product-background.png" alt="submit-product-background" />
+                </div>
                 <form onSubmit={this.handleSubmit}>
                     <h1 id="create-product">{this.props.formType}</h1>
                     <br />
