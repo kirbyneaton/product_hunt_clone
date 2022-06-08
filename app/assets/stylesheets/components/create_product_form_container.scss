@@ -1,5 +1,13 @@
 @import "variables";
 
+.create-edit-form-page {
+    display: flex;
+}
+
+#submit-product-background {
+    width: 30%;
+}
+
 form {
     align-items: left;
     justify-content: left;
