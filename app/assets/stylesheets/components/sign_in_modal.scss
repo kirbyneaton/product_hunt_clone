@@ -20,8 +20,8 @@
    border-radius: 4px;
    top: 15%;
    left: 27%;
-   width: 46%;
-   height: 55%;
+   width: 50%;
+   height: 65%;
  }
 
  .modal-close {
@@ -67,6 +67,15 @@
 
  .errors {
   color: red;
+  margin: 14px;  
+ }
+
+ form.signup-signin {
+   margin-left: 0px;
+ }
+
+ #signup-content-end{
+  margin-bottom: 24px;
  }
 
  .signup-label {
@@ -75,9 +84,9 @@
  }
 
  .input {
-  margin-left: 2px;
+  margin-left: 14px;
   display: inline;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
  }
 
  .submit-modal {

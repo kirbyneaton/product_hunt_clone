@@ -58,13 +58,14 @@ class SessionForm extends React.Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
+                <form className='signup-signin' onSubmit={this.handleSubmit}>
                     <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/product-index/app/assets/images/product-hunt-logo-orange-960.png" id="modal-logo" alt="product-hunt-logo" />
                     <h3 id="modal-title">{this.props.formType} on Product Fish</h3>
-                    <br />
+                    <br/>
                     <p>Join our community of friendly bears discovering and sharing the freshest fish!</p>
                     <br />
-                    Please {this.props.formType} or <span>{this.props.otherForm}</span>
+                    <p id='signup-content-end'>Please {this.props.formType} or <span>{this.props.otherForm}</span>
+                    </p>
                     <div className='errors'>{this.renderErrors()}</div>
                     <div className='modal-close' onClick={this.props.closeModal}>✕</div>
                     <div>
@@ -74,7 +75,7 @@ class SessionForm extends React.Component {
                                 onChange={this.update('username')}
                         />
                         <br/>
-                        <label htmlFor="password">Password:</label>
+                        <label className='signup-label' htmlFor="password">Password:</label>
                         <input type="password" className='input' id="password"
                                 value={this.state.password}
                                 onChange={this.update('password')}
