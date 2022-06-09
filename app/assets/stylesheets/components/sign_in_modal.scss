@@ -69,14 +69,15 @@
   color: red;
  }
 
- label {
+ .signup-label {
    display: inline-block;
    width: 5em;
  }
 
- input {
-   margin-left: 2px;
-   
+ .input {
+  margin-left: 2px;
+  display: inline;
+  margin-bottom: 8px;
  }
 
  .submit-modal {

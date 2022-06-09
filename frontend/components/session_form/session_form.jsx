@@ -68,17 +68,17 @@ class SessionForm extends React.Component {
                     <div className='errors'>{this.renderErrors()}</div>
                     <div className='modal-close' onClick={this.props.closeModal}>✕</div>
                     <div>
-                        <br />
-                        <label htmlFor="username">Username:</label><input type="text" id="username"
+                        <label className='signup-label' htmlFor="username">Username:</label>
+                        <input type="text" className='input' id="username"
                                 value={this.state.username}
                                 onChange={this.update('username')}
-                            />
-                        <br />
+                        />
+                        <br/>
                         <label htmlFor="password">Password:</label>
-                            <input type="password" id="password"
+                        <input type="password" className='input' id="password"
                                 value={this.state.password}
                                 onChange={this.update('password')}
-                            />
+                        />
                         <br />
                         <input type="submit" className='submit-modal' value={this.props.formType} />
                         <br />
