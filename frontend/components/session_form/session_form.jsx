@@ -5,7 +5,7 @@ class SessionForm extends React.Component {
         super(props);
         this.state = {
             username: '',
-            password: ''
+            password: '',
         };
         
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -33,6 +33,9 @@ class SessionForm extends React.Component {
             password: ''
         });
     }
+
+   
+   
 
     handleDemo(e) {
         e.preventDefault();
@@ -81,9 +84,9 @@ class SessionForm extends React.Component {
                                 onChange={this.update('password')}
                         />
                         <br />
-                        <input type="submit" className='submit-modal' value={this.props.formType} />
+                        <input type="submit" className='submit-modal' value={this.props.formType}/>
                         <br />
-                        <input type="submit" className='submit-modal' value="Demo User" onClick={this.handleDemo}/>
+                        <input type="button" className='submit-modal' value="Demo User" onSubmit={this.handleDemo}/>
                     </div>
                 </form>
             </div>
