@@ -19,22 +19,12 @@ const mapDispatchToProps = dispatch => ({
     processDemo: (user) => dispatch(login(user))
         .then(() => dispatch(closeModal())),
     otherForm: (
-        <button id='modal-other-button' open={preventFocus} onKeyPress={handleKeyPress} onClick={() =>
+        <button id='modal-other-button' onClick={() =>
             dispatch(openModal('Signup'))}>
             Sign Up
         </button>
     ),
     closeModal: () => dispatch(closeModal())
 });
-
-// const onOpen = (args) => {
-//     args.preventFocus = true;
-// }
-// const handleKeyPress = (e) => {
-//     if (e.keyCode === 13) {
-//         e.preventDefault();
-//         e.target.blur();
-//     }
-// }
 
 export default connect(mapStateToProps, mapDispatchToProps)(SessionForm);

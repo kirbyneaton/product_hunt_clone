@@ -34,9 +34,6 @@ class SessionForm extends React.Component {
         });
     }
 
-   
-   
-
     handleDemo(e) {
         e.preventDefault();
         let user = {
@@ -61,14 +58,14 @@ class SessionForm extends React.Component {
     render() {
         return (
             <div>
+                <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/product-index/app/assets/images/product-hunt-logo-orange-960.png" id="modal-logo" alt="product-hunt-logo" />
+                <h3 id="modal-title">{this.props.formType} on Product Fish</h3>
+                <br />
+                <p>Join our community of friendly bears discovering and sharing the freshest fish!</p>
+                <br />
+                <p id='signup-content-end'>Please {this.props.formType} or <span>{this.props.otherForm}</span>
+                </p>
                 <form className='signup-signin' onSubmit={this.handleSubmit}>
-                    <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/product-index/app/assets/images/product-hunt-logo-orange-960.png" id="modal-logo" alt="product-hunt-logo" />
-                    <h3 id="modal-title">{this.props.formType} on Product Fish</h3>
-                    <br/>
-                    <p>Join our community of friendly bears discovering and sharing the freshest fish!</p>
-                    <br />
-                    <p id='signup-content-end'>Please {this.props.formType} or <span>{this.props.otherForm}</span>
-                    </p>
                     <div className='errors'>{this.renderErrors()}</div>
                     <div className='modal-close' onClick={this.props.closeModal}>✕</div>
                     <div>
@@ -86,7 +83,7 @@ class SessionForm extends React.Component {
                         <br />
                         <input type="submit" className='submit-modal' value={this.props.formType}/>
                         <br />
-                        <input type="button" className='submit-modal' value="Demo User" onSubmit={this.handleDemo}/>
+                        <input type="button" className='submit-modal' value="Demo User" onClick={this.handleDemo}/>
                     </div>
                 </form>
             </div>
