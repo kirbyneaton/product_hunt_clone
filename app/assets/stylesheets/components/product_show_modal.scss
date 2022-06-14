@@ -16,9 +16,10 @@
  .product-show-item {
     display: flex;
     align-items: left;
-    width: 90%;
+    width: 76%;
     margin: 48px 0px;
-    margin-left: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     border-radius: 4px;
     // border: 1px solid orange;
 }
@@ -75,10 +76,10 @@ img#product-photo {
  #product-show-overview {
     display: block;
     background-color: white;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 20px;
-    width: 92%;
+    width: 76%;
     padding: 20px 2%;
     height: 250px;
     border: 1px solid $border-grey;
@@ -88,10 +89,10 @@ img#product-photo {
  .comment-form {
    // display: flex;
    background-color: white;
-   margin-left: 2%;
-   margin-right: 2%;
+   margin-left: 10%;
+   margin-right: 10%;
    padding: 20px 2%;
-   width: 92%;
+   width: 76%;
    border: 1px solid $border-grey;
    border-top-left-radius: 4px;
    border-top-right-radius: 4px;
@@ -156,19 +157,19 @@ form img {
    text-align: left;
    color: $dark-grey;
    font-weight: 700;
-   margin-left: 2%;
-   margin-right: 2%;
+   margin-left: 10%;
+   margin-right: 10%;
    margin-bottom: 10px;
  }
 
  #product-show-comments {
    display: block;
    background-color: white;
-   margin-left: 2%;
-   margin-right: 2%;
+   margin-left: 10%;
+   margin-right: 10%;
    margin-bottom: 20px;
    padding: 20px 2%;
-   width: 92%;
+   width: 76%;
    height: auto;
    border: 1px solid $border-grey;
    border-bottom-left-radius: 4px;
