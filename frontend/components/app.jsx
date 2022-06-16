@@ -8,6 +8,7 @@ import {Route, Switch, Link} from 'react-router-dom';
 import Modal from "./modal/modal";
 import CreateProductFormContainer from "./product_form/create_product_form_container";
 import EditProductFormContainer from "./product_form/edit_product_form_container";
+import UserShowContainer from "./user_show/user_show_container";
 import configureStore from "../store/store";
 
 
@@ -30,7 +31,7 @@ const App = () => (
             {/* <Route path="/products/:productId" component={ProductShowContainer} /> */}
             <Route exact path="/products" component={CreateProductFormContainer} />
             <Route path="/products/:productId/edit" component={EditProductFormContainer} />
-            {/* <Route path="/users/:userId/" component={UserContainer} /> */}
+            <Route path="/users/:userId" component={UserShowContainer} />
             <Route exact path="/" component={ProductIndexContainer} />
         </Switch>
         
