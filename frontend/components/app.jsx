@@ -30,6 +30,7 @@ const App = () => (
             {/* <Route path="/products/:productId" component={ProductShowContainer} /> */}
             <Route exact path="/products" component={CreateProductFormContainer} />
             <Route path="/products/:productId/edit" component={EditProductFormContainer} />
+            {/* <Route path="/users/:userId/" component={UserContainer} /> */}
             <Route exact path="/" component={ProductIndexContainer} />
         </Switch>
         
