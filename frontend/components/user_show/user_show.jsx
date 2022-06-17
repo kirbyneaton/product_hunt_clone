@@ -53,7 +53,8 @@ class UserShow extends React.Component {
     // debugger
     return (
       <div>
-        Hi
+        Hi {this.props.currentUserId}
+        then {this.props.currentUser?.username}
       </div>
     );
   }
