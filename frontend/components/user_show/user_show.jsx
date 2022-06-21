@@ -44,17 +44,16 @@ class UserShow extends React.Component {
   // }
 
   render() {
-    // let currentProduct;
-    // for (let product of this.props.products) {
-    //   if (this.props.productId === product.id) {
-    //     currentProduct = product;
+    // let currentUser;
+    // for (let user of this.props.users) {
+    //   if (this.props.currentUserId === user.id) {
+    //     currentUser = user;
     //   }
     // }
     // debugger
     return (
       <div>
-        Hi {this.props.currentUserId}
-        then {this.props.currentUser?.username}
+        Name: {Object.values(this.props.users)[0].username}
       </div>
     );
   }

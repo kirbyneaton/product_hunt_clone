@@ -1,14 +1,16 @@
 import { connect } from "react-redux";
+import React from "react";
 import UserShow from "./user_show";
 
 const mapStateToProps = (state, ownProps, productId) => {
+  // debugger
   return {
     products: Object.values(state.entities.products),
     productId: ownProps.productId,
     // currentProduct: Object.values(state.entities.products)[productId],
     comments: Object.values(state.entities.comments),
     currentUserId: state.session.id,
-    currentUser: Object.values(state.entities.users),
+    users: state.entities.users,
     // errors: state.errors.session,
     errors: state.errors.comment
   };
