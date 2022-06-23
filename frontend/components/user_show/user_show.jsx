@@ -11,9 +11,10 @@ class UserShow extends React.Component {
     // this.renderErrors = this.renderErrors.bind(this);
   }
 
-  // componentDidMount() {
-  //   this.props.fetchProductComments(this.props.productId);
-  // }
+  componentDidMount() {
+    this.props.fetchProducts();
+    // this.props.fetchProductComments(this.props.productId);
+  }
 
   // componentWillUnmount() {
   //   // debugger
@@ -50,10 +51,18 @@ class UserShow extends React.Component {
     //     currentUser = user;
     //   }
     // }
-    // debugger
+    debugger
     return (
       <div>
-        Name: {Object.values(this.props.users)[0].username}
+        <header className="user-header">
+          Username: {Object.values(this.props.users)[0].username}
+        </header>
+        <div>
+          My Fish: {Object.values(this.props.products)}
+        </div>
+        <div>
+          My comments: blank
+        </div>
       </div>
     );
   }

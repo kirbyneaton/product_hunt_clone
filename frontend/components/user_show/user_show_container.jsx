@@ -1,11 +1,12 @@
 import { connect } from "react-redux";
 import React from "react";
 import UserShow from "./user_show";
+import { fetchProducts } from "../../util/product_api_util";
 
 const mapStateToProps = (state, ownProps, productId) => {
   // debugger
   return {
-    products: Object.values(state.entities.products),
+    products: state.entities.products,
     productId: ownProps.productId,
     // currentProduct: Object.values(state.entities.products)[productId],
     comments: Object.values(state.entities.comments),
