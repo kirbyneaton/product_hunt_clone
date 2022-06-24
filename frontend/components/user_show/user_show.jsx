@@ -13,6 +13,7 @@ class UserShow extends React.Component {
 
   componentDidMount() {
     this.props.fetchProducts();
+    // this.props.fetchProductComments(this.props.product.id);
     // this.props.fetchProductComments(this.props.productId);
   }
 
@@ -58,7 +59,9 @@ class UserShow extends React.Component {
           Username: {Object.values(this.props.users)[0].username}
         </header>
         <div>
-          My Fish: {Object.values(this.props.products)}
+          My Fish: {this.props.products.map(product => {
+            return(product.user_id)
+          })}
         </div>
         <div>
           My comments: blank
