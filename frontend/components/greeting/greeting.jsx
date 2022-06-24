@@ -12,7 +12,7 @@ const Greeting = ({ currentUser, logout, openModal }) => {
         <nav className='login-signup-modal'>
             <Link id="submit-new-fish" to='/products'><button id="submit-product">Submit New Fish</button></Link>
             <Link to={`/users/${currentUser.id}`} id='link-header-greeting'><h4 id='header-greeting'>Hi, {currentUser.username}! 🐻</h4></Link>
-            <button className='button' id='signup-button' onClick={logout}>Logout</button>
+            <Link to='/'><button className='button' id='signup-button' onClick={logout}>Logout</button></Link>
         </nav>
     );
 
