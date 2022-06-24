@@ -13,7 +13,7 @@ class UserShow extends React.Component {
 
   componentDidMount() {
     this.props.fetchProducts();
-    // this.props.fetchProductComments(this.props.product.id);
+    // this.props.fetchProductComments(this.props.products.id);
     // this.props.fetchProductComments(this.props.productId);
   }
 
@@ -46,23 +46,43 @@ class UserShow extends React.Component {
   // }
 
   render() {
+    let myFish = [];
+    for (let product of this.props.products) {
+      product.user_id === this.props.currentUserId ? myFish[product.id] = product : ""}
+
     // let currentUser;
     // for (let user of this.props.users) {
     //   if (this.props.currentUserId === user.id) {
     //     currentUser = user;
     //   }
     // }
-    debugger
+    // debugger
     return (
       <div>
         <header className="user-header">
-          Username: {Object.values(this.props.users)[0].username}
+          <div className="user-header">
+            <img id="user-show-profile-img" src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fat_bear.jpeg" alt="default-user-picture" />
+            <div className="user-header-content">
+              <p>{Object.values(this.props.users)[0].username}</p>
+              <button id="user-edit">edit button?</button>
+            </div>
+          </div>
         </header>
-        <div>
-          My Fish: {this.props.products.map(product => {
-            return(product.user_id)
+        <header>My Fish</header>
+        <ul>
+          {myFish.map(product => {
+            return(product.user_id===this.props.currentUserId ? 
+            <li className="product-item" key={product.id}>
+              <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/product-index/app/assets/images/fish1.jpeg" alt="product-picture" />
+                <div className="product-text-container">
+                  <p className="product-title">{product.title}</p>
+                  <p className="product-subtitle">{product.subtitle}</p>
+                  {/* <p className="comment-count">🗨️    {comments.length}</p> */}
+                </div>
+            </li> : "")
           })}
-        </div>
+          {}
+        </ul>
         <div>
           My comments: blank
         </div>

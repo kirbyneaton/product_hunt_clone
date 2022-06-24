@@ -1,0 +1,36 @@
+@import "variables";
+
+header.user-header {
+  background-image: linear-gradient(180deg, #311B80 0%, #00337E 100%);
+  height: 200px;
+  position: relative;
+  justify-content: left;
+}
+
+div.user-header {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+}
+
+img#user-show-profile-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.user-header-content {
+  color: white;
+  display: block;
+  p {
+    font-size: 32px;
+  font-weight: 600;
+  }
+}
+
+button#user-edit {
+  margin: 20px;
+  padding: 6px;
+  border: 1px solid white;
+}
