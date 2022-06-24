@@ -68,7 +68,11 @@ class UserShow extends React.Component {
             </div>
           </div>
         </header>
-        <header>My Fish</header>
+        <header>
+          <h4>My Fish</h4>
+          {/* <h4>My Comments</h4> */}
+
+        </header>
         <ul>
           {myFish.map(product => {
             return(product.user_id===this.props.currentUserId ? 
@@ -83,9 +87,6 @@ class UserShow extends React.Component {
           })}
           {}
         </ul>
-        <div>
-          My comments: blank
-        </div>
       </div>
     );
   }
