@@ -76,7 +76,7 @@ class UserShow extends React.Component {
         <ul>
           {myFish.map(product => {
             return(product.user_id===this.props.currentUserId ? 
-            <li className="product-item" key={product.id}>
+            <li className="product-item" key={product.id} onClick={() => this.props.openModal(product.id)}>
               <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/product-index/app/assets/images/fish1.jpeg" alt="product-picture" />
                 <div className="product-text-container">
                   <p className="product-title">{product.title}</p>
