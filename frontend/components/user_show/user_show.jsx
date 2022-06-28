@@ -50,12 +50,12 @@ class UserShow extends React.Component {
     for (let product of this.props.products) {
       product.user_id === this.props.currentUserId ? myFish[product.id] = product : ""}
 
-    // let currentUser;
-    // for (let user of this.props.users) {
-    //   if (this.props.currentUserId === user.id) {
-    //     currentUser = user;
-    //   }
-    // }
+    let currentUser;
+    for (let user of this.props.users) {
+      if (this.props.currentUserId === user.id) {
+        currentUser = user;
+      }
+    }
     // debugger
     return (
       <div>
@@ -63,7 +63,7 @@ class UserShow extends React.Component {
           <div className="user-header">
             <img id="user-show-profile-img" src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fat_bear.jpeg" alt="default-user-picture" />
             <div className="user-header-content">
-              <p>{Object.values(this.props.users)[0].username}</p>
+              <p>{currentUser.username}</p>
               {/* <button id="user-edit">edit button?</button> */}
             </div>
           </div>
@@ -73,7 +73,7 @@ class UserShow extends React.Component {
           {/* <h4>My Comments</h4> */}
         </div>
         {myFish.length === 0 ?
-        <p id='no-fish-yet'>😿 <br></br>No fish yet</p> :
+        <p id='no-fish-yet'>😿<br></br>No fish yet</p> :
         <ul id='my-fish'>
           {myFish.map(product => {
             return(product.user_id===this.props.currentUserId ? 
