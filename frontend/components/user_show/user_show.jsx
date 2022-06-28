@@ -72,7 +72,9 @@ class UserShow extends React.Component {
           <h4>My Fish</h4>
           {/* <h4>My Comments</h4> */}
         </div>
-        <ul>
+        {myFish.length === 0 ?
+        <p id='no-fish-yet'>😿 <br></br>No fish yet</p> :
+        <ul id='my-fish'>
           {myFish.map(product => {
             return(product.user_id===this.props.currentUserId ? 
             <li className="product-item" key={product.id} onClick={() => this.props.openModal(product.id)}>
@@ -85,7 +87,7 @@ class UserShow extends React.Component {
             </li> : "")
           })}
           {}
-        </ul>
+        </ul>}
       </div>
     );
   }
