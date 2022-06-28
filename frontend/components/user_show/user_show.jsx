@@ -64,15 +64,14 @@ class UserShow extends React.Component {
             <img id="user-show-profile-img" src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fat_bear.jpeg" alt="default-user-picture" />
             <div className="user-header-content">
               <p>{Object.values(this.props.users)[0].username}</p>
-              <button id="user-edit">edit button?</button>
+              {/* <button id="user-edit">edit button?</button> */}
             </div>
           </div>
         </header>
-        <header>
+        <div id='user-category-nav'>
           <h4>My Fish</h4>
           {/* <h4>My Comments</h4> */}
-
-        </header>
+        </div>
         <ul>
           {myFish.map(product => {
             return(product.user_id===this.props.currentUserId ? 

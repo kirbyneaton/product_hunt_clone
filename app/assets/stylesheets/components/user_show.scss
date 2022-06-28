@@ -5,6 +5,7 @@ header.user-header {
   height: 200px;
   position: relative;
   justify-content: left;
+  z-index: 1;
 }
 
 div.user-header {
@@ -33,4 +34,17 @@ button#user-edit {
   margin: 20px;
   padding: 6px;
   border: 1px solid white;
+}
+
+#user-category-nav {
+  font-size: 20px;
+  font-weight: 600;
+  color: $dark-grey;
+  border-bottom: 1px solid $border-grey;
+  
+  h4 {
+    border-bottom: 5px solid $orange;
+    width: fit-content;
+    padding: 20px;
+  }
 }
