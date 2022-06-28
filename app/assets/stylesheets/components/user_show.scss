@@ -9,8 +9,8 @@ header.user-header {
 }
 
 div.user-header {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   display: flex;
 }
 
@@ -24,9 +24,10 @@ img#user-show-profile-img {
 .user-header-content {
   color: white;
   display: block;
+  padding: 24px 0px;
   p {
     font-size: 32px;
-  font-weight: 600;
+    font-weight: 600;
   }
 }
 
@@ -37,14 +38,14 @@ button#user-edit {
 }
 
 #user-category-nav {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   color: $dark-grey;
   border-bottom: 1px solid $border-grey;
-  
+  padding: 0 5%;
   h4 {
-    border-bottom: 5px solid $orange;
+    padding: 16px 0px;
+    border-bottom: 4px solid $orange;
     width: fit-content;
-    padding: 20px;
   }
 }
