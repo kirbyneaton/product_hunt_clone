@@ -1,4 +1,4 @@
-import { RECEIVE_CURRENT_USER } from '../actions/session_actions';
+import { LOGOUT_CURRENT_USER, RECEIVE_CURRENT_USER } from '../actions/session_actions';
 import { RECEIVE_PRODUCT} from '../actions/product_actions';
 import { RECEIVE_COMMENT } from '../actions/comment_actions';
 
@@ -14,6 +14,8 @@ const usersReducer = (state = {}, action) => {
             nextState[action.user.id] = action.user
             // debugger
             return nextState;
+        case LOGOUT_CURRENT_USER:
+            return {};
         default:
             return state;
     }

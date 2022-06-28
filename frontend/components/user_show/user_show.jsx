@@ -5,7 +5,7 @@ class UserShow extends React.Component {
     super(props);
 
     // this.state = {
-    //   comment: ''
+    //   users: ''
     // };
 
     // this.renderErrors = this.renderErrors.bind(this);
