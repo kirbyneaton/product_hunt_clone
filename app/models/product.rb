@@ -8,4 +8,8 @@ class Product < ApplicationRecord
     def comment_count
         @comment_count = comments.length
     end
+
+    def username
+        @username = user.username
+    end
 end

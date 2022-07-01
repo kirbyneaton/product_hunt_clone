@@ -105,7 +105,7 @@ class ProductShow extends React.Component {
                             <Link to={`/products/${currentProduct.id}/edit`}><button onClick={this.props.closeModal} id="edit-product">Edit Fish</button></Link>
                             <button onClick={() => this.props.deleteProduct(currentProduct.id)} id="delete-product">Delete Fish</button>
                         </div> : 
-                        <div> Created by {currentProduct.user_id}</div>
+                        <div> Created by {currentProduct.username}</div>
                         }
                     </div>
                 </div>
