@@ -47,22 +47,22 @@ class ProductIndex extends React.Component {
                     <ul id="portfolio-projects">
                         <li className="my-projects">
                             <div>
-                                <h3>My Project 1</h3>
+                                <h3>Mern Stack Proj</h3>
                                 <p>Desription</p>
                             </div>
                             <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/product-hunt-logo-orange-960.png" alt="project-picture" />
                         </li>
                         <li className="my-projects">
                             <div id="project-2">
-                                <h3>My Project 2</h3>
-                                <p>Desription</p>
+                                <h3>JS Proj</h3>
+                                <p>Description</p>
                             </div>
                             <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/product-hunt-logo-orange-960.png" alt="project-picture" />
                         </li>
                         <li className="my-projects">
                             <div>
                                 <h3>Portfolio Site</h3>
-                                <p>Desription</p>
+                                <p>Description</p>
                             </div>
                             <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/product-hunt-logo-orange-960.png" alt="project-picture" />
                         </li>
