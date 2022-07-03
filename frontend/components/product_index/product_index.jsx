@@ -48,7 +48,7 @@ class ProductIndex extends React.Component {
                         <li className="my-projects">
                             <div>
                                 <h3>Mern Stack Proj</h3>
-                                <p>Desription</p>
+                                <p>Description</p>
                             </div>
                             <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/product-hunt-logo-orange-960.png" alt="project-picture" />
                         </li>
