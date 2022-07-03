@@ -17,6 +17,7 @@ div.user-header {
 img#user-show-profile-img {
   height: 170px;
   width: 170px;
+  object-fit: cover;
   border-radius: 50%;
   border: 5px solid white;
 }
