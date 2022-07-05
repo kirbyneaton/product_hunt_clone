@@ -9,7 +9,11 @@
 Product.delete_all
 User.delete_all
 
-demo_user = User.create!(username: 'Demo User', password: '123456')
+demo_user = User.create!(
+    username: 'Demo User',
+    password: '123456',
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/database-edits/app/assets/images/bear_Demo_User.jpeg'
+)
 
 User.create!(username: 'Otis', password: '123456')
 
