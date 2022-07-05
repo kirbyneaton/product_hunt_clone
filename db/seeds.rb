@@ -15,7 +15,11 @@ demo_user = User.create!(
     profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/database-edits/app/assets/images/bear_Demo_User.jpeg'
 )
 
-User.create!(username: 'Otis', password: '123456')
+User.create!(
+    username: 'Otis',
+    password: '123456',
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/database-edits/app/assets/images/bear_Otis.jpeg'
+)
 
 User.create!(username: 'Holly', password: '123456')
 
