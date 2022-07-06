@@ -40,7 +40,7 @@ class ProductIndexItem extends React.Component {
         return(
             <div>
                 <li className="product-item" onClick={() => openModal(product.id)}>
-                    <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/product-index/app/assets/images/fish1.jpeg" alt="product-picture" />
+                    <img src={product.img_url ? product.img_url : "https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Default.png"} alt="product-picture" />
                     <div className="product-text-container">
                         <p className="product-title">{product.title}</p>
                         <p className="product-subtitle">{product.subtitle}</p>

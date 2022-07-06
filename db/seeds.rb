@@ -123,7 +123,6 @@ Product.create!(
     title: 'Etta Bull',
     subtitle: 'Some are red.',
     description: "Really, really, really, really, really, really, long test description",
-    img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Ann_Chovi.jpeg',
     img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Etta_Bull.jpeg',
     user_id: 2
 )

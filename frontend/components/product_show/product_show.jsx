@@ -35,7 +35,7 @@ class ProductShow extends React.Component {
         // debugger
         return(
             <div id="comment-indv" key={comment.id}>
-                <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fat_bear.jpeg" alt="default-user-picture" />
+                <img src={comment.user.profile_img ? comment.user.profile_img : 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Default.png'} alt="user-picture" />
                 <div className="comment-text">
                     <p id="comment-username">{comment.user.username}</p>
                     <p id="comment-body">{comment.body}</p>
@@ -96,7 +96,7 @@ class ProductShow extends React.Component {
             <div>
                 <div className='modal-close' onClick={this.props.closeModal}>✕</div>
                 <div className="product-show-item">
-                    <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/product-index/app/assets/images/fish1.jpeg" alt="product-picture" id="product-photo"/>
+                    <img src={currentProduct.img_url ? currentProduct.img_url : "https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Default.png"} alt="product-picture" id="product-photo"/>
                     <div className="product-show-text-container">
                         <h1 id="product-show-title">{currentProduct.title}</h1>
                         <h2 id="product-show-subtitle">{currentProduct.subtitle}</h2>
@@ -111,7 +111,6 @@ class ProductShow extends React.Component {
                 </div>
                 
                 <div id="product-show-overview">
-                    product-show-overview testing
                     <p id="product-show-description">{currentProduct.description}</p>
                 </div>
 
@@ -119,7 +118,7 @@ class ProductShow extends React.Component {
                 <div>
                     <form className="comment-form" onSubmit={this.handleSubmit}>
                         <div id="comment-box">
-                            <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fat_bear.jpeg" alt="current-user-picture" />
+                            <img src={Object.values(getState()?.entities?.users)[0].profile_img ? Object.values(getState()?.entities?.users)[0].profile_img : 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Default.png'}alt="current-user-picture" />
                             <input className="input comment-input"
                                 type="text"
                                 value={this.state.comment}
