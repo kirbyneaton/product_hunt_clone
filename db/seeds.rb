@@ -8,44 +8,97 @@
 
 Product.delete_all
 User.delete_all
+Comment.delete_all
 
 demo_user = User.create!(
     username: 'Demo User',
     password: '123456',
-    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/database-edits/app/assets/images/bear_Demo_User.jpeg'
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Demo_User.jpeg'
 )
 
 User.create!(
     username: 'Otis',
     password: '123456',
-    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/database-edits/app/assets/images/bear_Otis.jpeg'
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Otis.jpeg'
 )
 
-User.create!(username: 'Holly', password: '123456')
+User.create!(
+    username: 'Holly',
+    password: '123456',
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Holly.jpg'
+)
 
-User.create!(username: 'Cub', password: '123456')
+User.create!(
+    username: 'Cub',
+    password: '123456',
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Cub.jpg'
+)
 
-User.create!(username: 'Chunk', password: '123456')
+User.create!(
+    username: 'Chunk',
+    password: '123456',
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Chunk.jpg'
+)
 
-User.create!(username: 'Popeye', password: '123456')
+User.create!(
+    username: 'Popeye',
+    password: '123456',
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Popeye.jpg'
+)
 
-User.create!(username: 'Gummy', password: '123456')
+User.create!(
+    username: 'Gummy',
+    password: '123456',
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Gummy.jpg'
+)
 
-User.create!(username: 'Sam Mineater', password: '123456')
+User.create!(
+    username: 'Sam Mineater',
+    password: '123456',
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Sam_Mineater.jpg'
+)
 
-User.create!(username: 'Barry', password: '123456')
+User.create!(
+    username: 'Barry',
+    password: '123456',
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Barry.jpg'
+)
 
-User.create!(username: 'Fozzie', password: '123456')
+User.create!(
+    username: 'Fozzie',
+    password: '123456',
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Fozzie.jpg'
+)
 
-User.create!(username: 'Ted E. Bear', password: '123456')
+User.create!(
+    username: 'Ted E. Bear',
+    password: '123456',
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Ted_E_Bear.jpg'
+)
 
-User.create!(username: 'Corduroy', password: '123456')
+User.create!(
+    username: 'Corduroy',
+    password: '123456',
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Corduroy.jpg'
+)
 
-User.create!(username: 'Hank the Tank', password: '123456')
+User.create!(
+    username: 'Hank The Tank',
+    password: '123456',
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Hank.jpg'
+)
 
-User.create!(username: 'Smokey', password: '123456')
+User.create!(
+    username: 'Smokey',
+    password: '123456',
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Smokey.jpg'
+)
 
-User.create!(username: 'Ursa', password: '123456')
+User.create!(
+    username: 'Ursa',
+    password: '123456',
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Ursa.jpg'
+)
 
 
 
@@ -91,6 +144,8 @@ Product.create!(
     description: "Really, really, really, really, really, really, long test description",
     user_id: 2
 )
+
+
 
 
 Comment.create!(
