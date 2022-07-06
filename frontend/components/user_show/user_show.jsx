@@ -61,9 +61,9 @@ class UserShow extends React.Component {
       <div>
         <header className="user-header">
           <div className="user-header">
-            <img id="user-show-profile-img" src={currentUser.profile_img ? currentUser.profile_img : 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Ursa.jpg'}
+            <img id="user-show-profile-img" src={currentUser.profile_img ? currentUser.profile_img : 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Default.png'}
             // "https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fat_bear.jpeg" 
-            alt="default-user-picture" />
+            alt="user--profile-picture" />
             <div className="user-header-content">
               <p>{currentUser.username}</p>
               {/* <button id="user-edit">edit button?</button> */}
