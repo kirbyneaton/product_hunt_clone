@@ -104,47 +104,95 @@ User.create!(
 
 
 Product.create!(
-    title: 'One Fish',
-    subtitle: 'This one has a little car.',
+    title: 'Anne Chovi',
+    subtitle: 'All these flavors and she chose to be salty',
     description: "Really, really, really, really, really, really, long test description",
-    img_url:''
-    user_id: 1
+    img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Ann_Chovi.jpeg',
+    user_id: 3
 )
 
 Product.create!(
-    title: 'Two Fish',
+    title: 'Bubble Fett',
     subtitle: 'This one has a little star.',
-    description: "Really, really, really, really, really, really, long test description",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim praesent elementum facilisis leo vel fringilla est ullamcorper. Eu non diam phasellus vestibulum. Pulvinar pellentesque habitant morbi tristique senectus et netus et. Sed velit dignissim sodales ut eu sem. Eu feugiat pretium nibh ipsum consequat. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Id leo in vitae turpis.",
+    img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Bubble_Fett.jpeg',
     user_id: 1
 )
 
 Product.create!(
-    title: 'Red Fish',
+    title: 'Etta Bull',
     subtitle: 'Some are red.',
     description: "Really, really, really, really, really, really, long test description",
+    img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Ann_Chovi.jpeg',
+    img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Etta_Bull.jpeg',
     user_id: 2
 )
 
 Product.create!(
-    title: 'Blue Fish',
+    title: 'Finny Weasley',
     subtitle: 'Some are blue.',
     description: "Really, really, really, really, really, really, long test description",
+    img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Finny_Weasley.jpeg',
     user_id: 2
 )
 
 Product.create!(
-    title: 'Five Fish',
+    title: 'Left Shark',
     subtitle: 'Fish 5 desc.',
     description: "Really, really, really, really, really, really, long test description",
+    img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Left_Shark.jpeg',
     user_id: 2
 )
 
 Product.create!(
-    title: 'Six Fish',
+    title: 'Mr. Bubbles',
     subtitle: 'Fish 6 desc.',
     description: "Really, really, really, really, really, really, long test description",
+    img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Mr_Bubbles.jpeg',
     user_id: 2
 )
+
+Product.create!(
+    title: 'Sashimi',
+    subtitle: 'Fish 7 desc.',
+    description: "Really, really, really, really, really, really, long test description",
+    img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Sashimi.jpeg',
+    user_id: 2
+)
+
+Product.create!(
+    title: 'Shark Wahlberg',
+    subtitle: 'Fish 8 desc.',
+    description: "Really, really, really, really, really, really, long test description",
+    img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Shark_Wahlberg.jpeg',
+    user_id: 2
+)
+
+Product.create!(
+    title: 'Sockeye Tumi',
+    subtitle: 'Fish 9 desc.',
+    description: "Really, really, really, really, really, really, long test description",
+    img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Sockeye.jpeg',
+    user_id: 2
+)
+
+Product.create!(
+    title: 'Swim Shady',
+    subtitle: 'Fish 10 desc.',
+    description: "Really, really, really, really, really, really, long test description",
+    img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Swim_Shady.jpeg',
+    user_id: 2
+)
+
+Product.create!(
+    title: 'Tuna Fey',
+    subtitle: 'Fish 11 desc.',
+    description: "Really, really, really, really, really, really, long test description",
+    img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Tuna_Fey.jpeg',
+    user_id: 2
+)
+
+
 
 
 
