@@ -107,6 +107,7 @@ Product.create!(
     title: 'One Fish',
     subtitle: 'This one has a little car.',
     description: "Really, really, really, really, really, really, long test description",
+    img_url:''
     user_id: 1
 )
 
