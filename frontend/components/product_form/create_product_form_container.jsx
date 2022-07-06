@@ -9,7 +9,7 @@ const mapStateToProps = (state) => ({
         title: "",
         subtitle: "",
         description: "",
-        img_url: "https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/product-index/app/assets/images/fish1.jpeg",
+        img_url: "https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Default.png",
         user_id: state.session.id
     },
     errors: state.errors.session,

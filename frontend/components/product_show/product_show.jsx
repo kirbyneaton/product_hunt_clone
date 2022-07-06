@@ -118,7 +118,7 @@ class ProductShow extends React.Component {
                 <div>
                     <form className="comment-form" onSubmit={this.handleSubmit}>
                         <div id="comment-box">
-                            <img src={Object.values(getState()?.entities?.users)[0].profile_img ? Object.values(getState()?.entities?.users)[0].profile_img : 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Default.png'}alt="current-user-picture" />
+                            <img src={Object.values(getState()?.entities?.users)[0].profile_img ? Object.values(getState()?.entities?.users)[0].profile_img : 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Default.png'}alt="current-user-picture" />
                             <input className="input comment-input"
                                 type="text"
                                 value={this.state.comment}
