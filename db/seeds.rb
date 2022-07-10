@@ -295,7 +295,7 @@ Comment.create!(
 Comment.create!(
     body: 'first',
     user_id: 13,
-    product_id: 4,
+    product_id: 3,
     parent_comment_id: nil
 )
 
@@ -356,9 +356,23 @@ Comment.create!(
 )
 
 Comment.create!(
-    body: 'Very trendy spot to eat. Friends and I all loved it.',
-    user_id: 2,
-    product_id: 5,
+    body: "Pretty good. Doesn't need soy sauce",
+    user_id: 7,
+    product_id: 6,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "I'm such a big fan of this",
+    user_id: 4,
+    product_id: 7,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "I caught her with my BEAR HANDS",
+    user_id: 11,
+    product_id: 7,
     parent_comment_id: nil
 )
 
@@ -366,6 +380,83 @@ Comment.create!(
     body: 'first',
     user_id: 13,
     product_id: 7,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: 'Do pandas know if their movies are in color or black & white?',
+    user_id: 13,
+    product_id: 8,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: 'Leaps out of the water like magic!',
+    user_id: 2,
+    product_id: 8,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "The best",
+    user_id: 14,
+    product_id: 9,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "Fantastic. Big fan",
+    user_id: 15,
+    product_id: 9,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "Koalas aren't bears",
+    user_id: 6,
+    product_id: 9,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "They don't meet the koalifications",
+    user_id: 11,
+    product_id: 9,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "koality hang tho :)",
+    user_id: 7,
+    product_id: 9,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "this is unbearable, let's press paws",
+    user_id: 12,
+    product_id: 9,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "this is panda-monium!",
+    user_id: 8,
+    product_id: 9,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "^ diskoalified",
+    user_id: 3,
+    product_id: 9,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "Ah I've been bamboo-zled",
+    user_id: 8,
+    product_id: 9,
     parent_comment_id: nil
 )
 
@@ -379,13 +470,21 @@ Comment.create!(
 Comment.create!(
     body: "yum yum yum yum",
     user_id: 10,
-    product_id: 9,
+    product_id: 10,
     parent_comment_id: nil
 )
 
 Comment.create!(
-    body: 'first',
-    user_id: 13,
+    body: "this one's a stretch...",
+    user_id: 5,
     product_id: 10,
     parent_comment_id: nil
 )
+
+Comment.create!(
+    body: "I heard he used to be called Sharky Shark",
+    user_id: 9,
+    product_id: 11,
+    parent_comment_id: nil
+)
+

@@ -137,7 +137,7 @@ class ProductShow extends React.Component {
                 
                 </div>
                 <div id="product-show-comments">
-                    {this.props.comments.map(this.renderComment)}
+                    {this.props.comments.length === 0 ? <p id='no-comments-yet'>😿<br></br>No comments yet</p> : this.props.comments.map(this.renderComment)}
                     
 
                     {/* <p>{!(this.props.comments) ? "loading" : this.props.comments.toString()}</p>  */}
