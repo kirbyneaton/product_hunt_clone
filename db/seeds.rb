@@ -193,38 +193,198 @@ Product.create!(
 
 
 
-
 Comment.create!(
-    body: 'This is Comment 1',
+    body: 'Almost want to have as a pet!',
     user_id: 1,
     product_id: 1,
     parent_comment_id: nil
 )
 
 Comment.create!(
-    body: 'This is Comment 2',
+    body: 'A bit jumpy',
     user_id: 2,
     product_id: 1,
-    parent_comment_id: 1
+    parent_comment_id: nil
 )
 
 Comment.create!(
-    body: 'This is Comment 3',
+    body: 'Very delicious...would recommend',
     user_id: 3,
+    product_id: 1,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "He's quick, but I was quicker ;). Yum",
+    user_id: 4,
+    product_id: 1,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: 'First',
+    user_id: 13,
+    product_id: 1,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "Would eat again, although get there early",
+    user_id: 5,
+    product_id: 1,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "my fav!!!!",
+    user_id: 6,
+    product_id: 1,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "Pretty good. Needs soy sauce",
+    user_id: 7,
     product_id: 2,
     parent_comment_id: nil
 )
 
 Comment.create!(
-    body: 'This is Comment 4',
+    body: 'first',
+    user_id: 13,
+    product_id: 2,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "Amazing!! Partner got me for my birthday..so sweet :)",
+    user_id: 8,
+    product_id: 2,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "Got lost trying to find oh well",
+    user_id: 9,
+    product_id: 2,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "What do you call a freezing bear? A brrrrrrr",
+    user_id: 11,
+    product_id: 2,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "Tastes a little fishy",
+    user_id: 5,
+    product_id: 3,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "So fetch.",
     user_id: 3,
     product_id: 3,
     parent_comment_id: nil
 )
 
 Comment.create!(
-    body: 'This is Comment 5',
-    user_id: 3,
+    body: 'first',
+    user_id: 13,
     product_id: 4,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "Anybody tried marlin?",
+    user_id: 9,
+    product_id: 3,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "Did not stand up. We're gonna have a problem here.",
+    user_id: 15,
+    product_id: 4,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "I mean, what more is there to say? Lengendary. So good.",
+    user_id: 14,
+    product_id: 4,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "Tastes like mom's spaghetti!",
+    user_id: 10,
+    product_id: 4,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "Not as good as the original",
+    user_id: 11,
+    product_id: 5,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: 'first',
+    user_id: 13,
+    product_id: 5,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: 'Would eat over Jar Jar lol',
+    user_id: 6,
+    product_id: 5,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: 'Very trendy spot to eat. Friends and I all loved it.',
+    user_id: 2,
+    product_id: 5,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: 'Very trendy spot to eat. Friends and I all loved it.',
+    user_id: 2,
+    product_id: 5,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: 'first',
+    user_id: 13,
+    product_id: 7,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: 'First',
+    user_id: 13,
+    product_id: 9,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: "yum yum yum yum",
+    user_id: 10,
+    product_id: 9,
+    parent_comment_id: nil
+)
+
+Comment.create!(
+    body: 'first',
+    user_id: 13,
+    product_id: 10,
     parent_comment_id: nil
 )
