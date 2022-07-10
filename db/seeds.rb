@@ -130,7 +130,7 @@ Product.create!(
 
 Product.create!(
     title: 'Swim Shady',
-    subtitle: 'Fish 10 desc.',
+    subtitle: 'Hi, my name is...',
     description: "Really, really, really, really, really, really, long test description",
     img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Swim_Shady.jpeg',
     user_id: 9
@@ -138,7 +138,7 @@ Product.create!(
 
 Product.create!(
     title: 'Bubble Fett',
-    subtitle: 'This one has a little star.',
+    subtitle: "This time YOU are the bounty hunter",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim praesent elementum facilisis leo vel fringilla est ullamcorper. Eu non diam phasellus vestibulum. Pulvinar pellentesque habitant morbi tristique senectus et netus et. Sed velit dignissim sodales ut eu sem. Eu feugiat pretium nibh ipsum consequat. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Id leo in vitae turpis.",
     img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Bubble_Fett.jpeg',
     user_id: 10
@@ -384,15 +384,15 @@ Comment.create!(
 )
 
 Comment.create!(
-    body: 'How do pandas know if their movies are in color or black & white?',
-    user_id: 4,
+    body: 'Leaps out of the water like magic!',
+    user_id: 2,
     product_id: 8,
     parent_comment_id: nil
 )
 
 Comment.create!(
-    body: 'Leaps out of the water like magic!',
-    user_id: 2,
+    body: 'How would pandas know if their movies were in black & white?!',
+    user_id: 4,
     product_id: 8,
     parent_comment_id: nil
 )
