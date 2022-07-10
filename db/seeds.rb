@@ -31,67 +31,67 @@ User.create!(
 User.create!(
     username: 'Cub',
     password: '123456',
-    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Cub.jpg'
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Cub.jpeg'
 )
 
 User.create!(
     username: 'Chunk',
     password: '123456',
-    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Chunk.jpg'
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Chunk.jpeg'
 )
 
 User.create!(
     username: 'Popeye',
     password: '123456',
-    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Popeye.jpg'
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Popeye.jpeg'
 )
 
 User.create!(
     username: 'Gummy',
     password: '123456',
-    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Gummy.jpg'
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Gummy.jpeg'
 )
 
 User.create!(
     username: 'Sam Mineater',
     password: '123456',
-    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Sam_Mineater.jpg'
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Sam_Mineater.jpeg'
 )
 
 User.create!(
     username: 'Barry',
     password: '123456',
-    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Barry.jpg'
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Barry.jpeg'
 )
 
 User.create!(
     username: 'Fozzie',
     password: '123456',
-    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Fozzie.jpg'
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Fozzie.jpeg'
 )
 
 User.create!(
     username: 'Ted E. Bear',
     password: '123456',
-    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Ted_E_Bear.jpg'
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Ted_E_Bear.jpeg'
 )
 
 User.create!(
     username: 'Corduroy',
     password: '123456',
-    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Corduroy.jpg'
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Corduroy.jpeg'
 )
 
 User.create!(
     username: 'Hank The Tank',
     password: '123456',
-    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Hank.jpg'
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Hank.jpeg'
 )
 
 User.create!(
     username: 'Smokey',
     password: '123456',
-    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Smokey.jpg'
+    profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Smokey.jpeg'
 )
 
 User.create!(
@@ -99,6 +99,7 @@ User.create!(
     password: '123456',
     profile_img: 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Ursa.jpg'
 )
+
 
 
 
