@@ -109,7 +109,7 @@ Product.create!(
     subtitle: 'Fish 6 desc.',
     description: "Really, really, really, really, really, really, long test description",
     img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Mr_Bubbles.jpeg',
-    user_id: 2
+    user_id: 1
 )
 
 Product.create!(
@@ -125,7 +125,7 @@ Product.create!(
     subtitle: 'Fish 11 desc.',
     description: "Really, really, really, really, really, really, long test description",
     img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Tuna_Fey.jpeg',
-    user_id: 2
+    user_id: 1
 )
 
 Product.create!(
@@ -133,7 +133,7 @@ Product.create!(
     subtitle: 'Fish 10 desc.',
     description: "Really, really, really, really, really, really, long test description",
     img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Swim_Shady.jpeg',
-    user_id: 2
+    user_id: 9
 )
 
 Product.create!(
@@ -141,7 +141,7 @@ Product.create!(
     subtitle: 'This one has a little star.',
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim praesent elementum facilisis leo vel fringilla est ullamcorper. Eu non diam phasellus vestibulum. Pulvinar pellentesque habitant morbi tristique senectus et netus et. Sed velit dignissim sodales ut eu sem. Eu feugiat pretium nibh ipsum consequat. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Id leo in vitae turpis.",
     img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Bubble_Fett.jpeg',
-    user_id: 1
+    user_id: 10
 )
 
 Product.create!(
@@ -157,7 +157,7 @@ Product.create!(
     subtitle: 'Some are red.',
     description: "Really, really, really, really, really, really, long test description",
     img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Etta_Bull.jpeg',
-    user_id: 2
+    user_id: 12
 )
 
 Product.create!(
@@ -165,7 +165,7 @@ Product.create!(
     subtitle: 'Some are blue.',
     description: "Really, really, really, really, really, really, long test description",
     img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Finny_Weasley.jpeg',
-    user_id: 2
+    user_id: 15
 )
 
 Product.create!(
@@ -173,7 +173,7 @@ Product.create!(
     subtitle: 'Fish 5 desc.',
     description: "Really, really, really, really, really, really, long test description",
     img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Left_Shark.jpeg',
-    user_id: 2
+    user_id: 5
 )
 
 Product.create!(
@@ -181,7 +181,7 @@ Product.create!(
     subtitle: 'Fish 9 desc.',
     description: "Really, really, really, really, really, really, long test description",
     img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Sockeye.jpeg',
-    user_id: 2
+    user_id: 11
 )
 
 Product.create!(
@@ -189,7 +189,7 @@ Product.create!(
     subtitle: 'Fish 8 desc.',
     description: "Really, really, really, really, really, really, long test description",
     img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Shark_Wahlberg.jpeg',
-    user_id: 2
+    user_id: 7
 )
 
 
@@ -329,7 +329,7 @@ Comment.create!(
 
 Comment.create!(
     body: "Not as good as the original",
-    user_id: 11,
+    user_id: 15,
     product_id: 5,
     parent_comment_id: nil
 )
@@ -370,7 +370,7 @@ Comment.create!(
 )
 
 Comment.create!(
-    body: "I caught her with my BEAR HANDS",
+    body: "I caught 'er with my BEAR HANDS",
     user_id: 11,
     product_id: 7,
     parent_comment_id: nil
@@ -384,8 +384,8 @@ Comment.create!(
 )
 
 Comment.create!(
-    body: 'Do pandas know if their movies are in color or black & white?',
-    user_id: 13,
+    body: 'How do pandas know if their movies are in color or black & white?',
+    user_id: 4,
     product_id: 8,
     parent_comment_id: nil
 )
