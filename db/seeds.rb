@@ -123,7 +123,11 @@ Product.create!(
 Product.create!(
     title: 'Tuna Fey',
     subtitle: 'Fish 11 desc.',
-    description: "Really, really, really, really, really, really, long test description",
+    description: "OK, first off: a lion, swimming in the ocean. Lions don't like water. If you placed it near a river or some sort of fresh water source, that make sense. But you find yourself in the ocean, 20 foot wave, I'm assuming off the coast of South Africa, coming up against a full grown 800 pound tuna with his 20 or 30 friends, you lose that battle, you lose that battle 9 times out of 10. And guess what, you've wandered into our school of tuna and we now have a taste of lion. We've talked to ourselves. We've communicated and said 'You know what, lion tastes good, let's go get some more lion'. We've developed a system to establish a beach-head and aggressively hunt you and your family and we will corner your pride, your children, your offspring.
+    
+    How you gonna do that?
+        
+    We will construct a series of breathing apparatus with kelp. We will be able to trap certain amounts of oxygen. It's not gonna be days at a time. An hour? Hour forty-five? No problem. That will give us enough time to figure out where you live, go back to the sea, get some more oxygen, and stalk you. You just lost at your own game. You're outgunned and out-manned.",
     img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Tuna_Fey.jpeg',
     user_id: 1
 )

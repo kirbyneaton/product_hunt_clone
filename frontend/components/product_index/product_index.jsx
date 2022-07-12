@@ -67,8 +67,8 @@ class ProductIndex extends React.Component {
                             <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/product-hunt-logo-orange-960.png" alt="project-picture" />
                         </li>
                     </ul>
-                    <h2>Launching soon?</h2>
-                    <p>Create your own Upcoming page and start building an audience for your launch 🚀</p>
+                    <h2>Fishing soon?</h2>
+                    <p>Create your own Fish page and start building an audience for your launch 🐟</p>
                 </aside>
             </div>
         )
