@@ -125,11 +125,31 @@ aside {
     }
 }
 
-aside h2 {
+#fishing-soon{
+    text-align: left;
+    margin-bottom: 48px;
+    border-bottom: 1px solid #d9e1ec;
+    h2 {
     margin-top: 48px;
+    margin-bottom: 8px;
     font-weight: bold;
     color: $dark-grey;
+    }
+    p {
+        font-size: 12px;
+        margin-bottom: 48px;
+    }
 }
+
+#copywrite {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    p {
+        font-size: 10px;
+        text-align: left;
+    }
+}
+
 
 
 
