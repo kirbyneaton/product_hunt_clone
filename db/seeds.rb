@@ -114,15 +114,19 @@ Product.create!(
 
 Product.create!(
     title: 'Sashimi',
-    subtitle: 'Fish 7 desc.',
-    description: "Really, really, really, really, really, really, long test description",
+    subtitle: 'Needs nothing else',
+    description: "Tom: This is the hottest restaurant in L.A. All the sushi is made from fish previously owned by celebrities.
+
+    Waitress: Okay. This is Charlize Theron's yellowtail. Here we have Paul Reiser's salmon. And Peter Bogdanovich's saltwater eel. Enjoy.
+    
+    Donna: Mmm, Bogdano-delish.",
     img_url:'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/fish_Sashimi.jpeg',
     user_id: 2
 )
 
 Product.create!(
     title: 'Tuna Fey',
-    subtitle: 'Fish 11 desc.',
+    subtitle: 'A funny fish',
     description: "OK, first off: a lion, swimming in the ocean. Lions don't like water. If you placed it near a river or some sort of fresh water source, that make sense. But you find yourself in the ocean, 20 foot wave, I'm assuming off the coast of South Africa, coming up against a full grown 800 pound tuna with his 20 or 30 friends, you lose that battle, you lose that battle 9 times out of 10. And guess what, you've wandered into our school of tuna and we now have a taste of lion. We've talked to ourselves. We've communicated and said 'You know what, lion tastes good, let's go get some more lion'. We've developed a system to establish a beach-head and aggressively hunt you and your family and we will corner your pride, your children, your offspring.
     
     How you gonna do that?
