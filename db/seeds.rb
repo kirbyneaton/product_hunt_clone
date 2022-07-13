@@ -107,7 +107,7 @@ User.create!(
 Product.create!(
     title: 'Mr. Bubbles',
     subtitle: "So good you'll want to bring home as a pet",
-    description: "Opens with creamy and sweet notes of carrot cake, dulce de leche, and chestnut honey. The pear brandy's influence inflects the core aroma, with poached pear leading blackberry and dried lime peel. Shimmering at the edges are countless herbs and dusty spices. Notes familiar to Sicilian amari, such as fennel seed, aniseed, nutmeg, and cacao are there. As Sicily was once part of the Duchy of Savoy licorice, wormwood and chamomile are encountered here, in Savoy’s tradition of genepy and absinthe.
+    description: "Opens with creamy and sweet notes of carrot cake, dulce de leche, and chestnut honey. The pear brandy's influence inflects the core aroma, with poached pear leading blackberry and dried lime peel. Shimmering at the edges are countless herbs and dusty spices. Notes familiar to Sicilian amari, such as fennel seed, aniseed, nutmeg, and cacao are there. As Sicily was once part of the Duchy of Savoy licorice, wormwood and chamomile are encountered here, in Savoy's tradition of genepy and absinthe.
     
     Lush sweetness is kept in check by some sandy tannin and high strength. Here, the rum takes center stage, with blackstrap molasses, sambuca, and olive brine arriving first. The rich dark character builds with date and chipotle leading into pipe tobacco and walnut. The amaro is never far behind, exhibiting licorice root, gentian, green cardamom and kola nut.
     
