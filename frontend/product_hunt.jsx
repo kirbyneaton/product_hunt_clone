@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.signup = SessionApiUtil.signup
     window.login = SessionApiUtil.login
     window.logout = SessionApiUtil.logout
-    window.loginDemoUser = ProductApiUtil.loginDemoUser
     window.fetchProducts = ProductApiUtil.fetchProducts
     window.fetchProduct = ProductApiUtil.fetchProduct
     window.fetchProductComments = CommentApiUtil.fetchProductComments
