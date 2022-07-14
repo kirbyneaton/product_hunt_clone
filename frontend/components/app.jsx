@@ -17,6 +17,9 @@ const App = () => (
         <Modal />
         <header>
             <Link to='/' id="header-logo"><img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/product-index/app/assets/images/product-hunt-logo-orange-960.png" id="logo" alt="product-fish" title="Product Fish" /></Link>
+            <div>
+                <input type="text" id='search' placeholder="Search Product Fish" />
+            </div>
             <nav>
                 <a href="https://github.com/kirbyneaton/product_hunt_clone" target="_blank" className="header-link">Github</a>
                 <a href="https://www.linkedin.com/in/kirbyneaton/" target="_blank" className="header-link">LinkedIn</a>
