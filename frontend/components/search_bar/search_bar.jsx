@@ -3,11 +3,12 @@ import React from "react";
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      search: ''
+    };
 
-    // this.state = {
-    //   users: ''
-    // };
-
+    
+    this.handleSubmit = this.handleSubmit.bind(this);
     // this.renderErrors = this.renderErrors.bind(this);
   }
 
@@ -15,10 +16,17 @@ class SearchBar extends React.Component {
   //   this.props.fetchProducts();
   // }
 
+  handleUpdate() {
+    return (e) => this.setState({ ["value"]: e.currentTarget.value });
+  }
+
   render() {
     return(
       <div>
-        <input type="text" id='search-input' placeholder="Search Product Fish" />
+        <form action="" className="search-form">
+          <input onChange={this.handleUpdate()}type="search" results='5' id='search-input' placeholder="Search Product Fish" />
+
+        </form>
       </div>
     )
   }
