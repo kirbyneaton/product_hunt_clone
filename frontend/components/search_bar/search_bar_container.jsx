@@ -9,20 +9,21 @@ const mapStateToProps = (state, ownProps, productId) => {
   // debugger
   return {
     products: Object.values(state.entities.products),
-    productId: ownProps.productId,
+    // productId: ownProps.productId,
     // currentProduct: Object.values(state.entities.products)[productId],
-    comments: Object.values(state.entities.comments),
-    currentUserId: state.session.id,
-    users: Object.values(state.entities.users),
+    // comments: Object.values(state.entities.comments),
+    // currentUserId: state.session.id,
+    // users: Object.values(state.entities.users),
     // errors: state.errors.session,
-    errors: state.errors.comment
+    // errors: state.errors.comment
   };
 };
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchProduct: (id) => (dispatch(fetchProduct(id))),
+  // fetchProduct: (id) => (dispatch(fetchProduct(id))),
   fetchProducts: () => dispatch(fetchProducts()),
-  fetchProductComments: (productId) => (dispatch(fetchProductComments(productId))),
+  recieveSearch: (keyword) => dispatch(recieveSearch(keyword)),
+  // fetchProductComments: (productId) => (dispatch(fetchProductComments(productId))),
   openModal: (modal) => (dispatch(openModal(modal))),
   closeModal: () => dispatch(closeModal())
   // updateProduct: (product) => dispatch(updateProduct(product)),

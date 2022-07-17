@@ -4,7 +4,7 @@ class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      search: ''
+      keyword: ''
     };
 
     
@@ -16,8 +16,13 @@ class SearchBar extends React.Component {
   //   this.props.fetchProducts();
   // }
 
+  handleSubmit(e){
+    e.preventDefault();
+
+  }
+
   handleUpdate() {
-    return (e) => this.setState({ ["value"]: e.currentTarget.value });
+    return (e) => this.setState({ ["keyword"]: e.currentTarget.keyword });
   }
 
   render() {
