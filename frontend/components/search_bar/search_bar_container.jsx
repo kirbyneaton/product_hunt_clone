@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import SearchBar from "./search_bar";
 import { fetchProducts, fetchProduct, deleteProduct } from "../../actions/product_actions";
 import { openModal, closeModal } from "../../actions/modal_actions";
-import { reccieveSearch } from 
+import { receiveSearch } from "../../actions/search"; 
 
 
 const mapStateToProps = (state, ownProps, productId) => {
@@ -23,7 +23,7 @@ const mapStateToProps = (state, ownProps, productId) => {
 const mapDispatchToProps = (dispatch) => ({
   // fetchProduct: (id) => (dispatch(fetchProduct(id))),
   fetchProducts: () => dispatch(fetchProducts()),
-  recieveSearch: (query) => dispatch(recieveSearch(query)),
+  receiveSearch: (query) => dispatch(receiveSearch(query)),
   // fetchProductComments: (productId) => (dispatch(fetchProductComments(productId))),
   openModal: (modal) => (dispatch(openModal(modal))),
   closeModal: () => dispatch(closeModal())
