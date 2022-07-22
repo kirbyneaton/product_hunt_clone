@@ -4,6 +4,7 @@ import SearchBar from "./search_bar";
 import { fetchProducts, fetchProduct, deleteProduct } from "../../actions/product_actions";
 import { openModal, closeModal } from "../../actions/modal_actions";
 import { receiveSearch } from "../../actions/search"; 
+import { withRouter } from "react-router-dom";
 
 
 const mapStateToProps = (state, ownProps, productId) => {
@@ -34,4 +35,4 @@ const mapDispatchToProps = (dispatch) => ({
   // }
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(SearchBar));
