@@ -31,7 +31,7 @@ class SearchBar extends React.Component {
 
   render() {
     return(
-      <div>
+      <div className="search-container">
         <form action="" className="search-form">
           <input onChange={this.handleUpdate()}type="search" results='5' id='search-input' placeholder="Search Product Fish" />
 

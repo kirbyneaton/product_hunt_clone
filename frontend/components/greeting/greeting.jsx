@@ -16,7 +16,7 @@ const Greeting = ({ currentUser, logout, openModal }) => {
                 <img id="header-profile-img" src={currentUser.profile_img ? currentUser.profile_img : 'https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/bear_Default.png'}
                 alt="header-user-profile-picture" />
             </Link>
-            <Link to='/'><button className='button' id='signup-button' onClick={logout}>Logout</button></Link>
+            <Link to='/' className='signin-signout'><button className='button' id='signup-button' onClick={logout}>Logout</button></Link>
         </nav>
     );
 
