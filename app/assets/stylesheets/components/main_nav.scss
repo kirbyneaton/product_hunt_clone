@@ -37,6 +37,13 @@ header {
 //     color: red;
 // }
 
+#search-input {
+    color: #e12e0d;
+    min-width: 10%;
+    height: 40px;
+    background-color: $border-grey;
+}
+
 
 a.header-link {
     display: block;
