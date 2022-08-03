@@ -32,6 +32,7 @@ class SearchBar extends React.Component {
   render() {
     return(
       <div className="search-container">
+        <img id="search-icon" src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/search-icon.jpeg" alt="search-icon" />
         <form action="" className="search-form">
           <input onChange={this.handleUpdate()}type="search" results='5' id='search-input' placeholder="Search Product Fish" />
 

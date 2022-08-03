@@ -37,6 +37,16 @@ header {
     // display: block;
     // width: 100%;
     margin-left: 32px;
+    position: relative;
+}
+
+#search-icon {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 13px;
+    left: 16px;
+    margin: 0px;
 }
 
 .search-form {
