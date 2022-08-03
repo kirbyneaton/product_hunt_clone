@@ -10,6 +10,7 @@ import CreateProductFormContainer from "./product_form/create_product_form_conta
 import EditProductFormContainer from "./product_form/edit_product_form_container";
 import UserShowContainer from "./user_show/user_show_container";
 import configureStore from "../store/store";
+import SearchBarContainer from "./search_bar/search_bar_container";
 
 
 const App = () => (
@@ -17,9 +18,7 @@ const App = () => (
         <Modal />
         <header>
             <Link to='/' id="header-logo"><img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/product-index/app/assets/images/product-hunt-logo-orange-960.png" id="logo" alt="product-fish" title="Product Fish" /></Link>
-            <div>
-                <input type="text" id='search' placeholder="Search Product Fish" />
-            </div>
+            <SearchBarContainer />
             <nav>
                 <a href="https://github.com/kirbyneaton/product_hunt_clone" target="_blank" className="header-link">Github</a>
                 <a href="https://www.linkedin.com/in/kirbyneaton/" target="_blank" className="header-link">LinkedIn</a>
@@ -27,7 +26,9 @@ const App = () => (
             </nav>
             <div id="login-corner">
                 {/* ^this should 'Link to' the route for the create/edit container & add route below in switch? 'Route path=' */}
-                <div className="greeting-cont"><GreetingContainer /></div>
+                <div className="greeting-cont">
+                    <GreetingContainer />
+                </div>
             </div>
         </header>
         <Switch>

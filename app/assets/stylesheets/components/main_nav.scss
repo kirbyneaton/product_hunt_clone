@@ -21,7 +21,7 @@ body {
 header {
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
     // box-sizing: border-box;
     padding: 20px;
@@ -33,7 +33,36 @@ header {
     background-color: white;
 }
 
-#search
+.search-container {
+    // display: block;
+    // width: 100%;
+    margin-left: 32px;
+}
+
+.search-form {
+    // display: block;
+    // position: relative;
+    // width: 100%;
+    margin: 0;
+}
+
+.search-form > #search-input {
+    color: $text-grey;
+    width: 220px;
+    height: 40px;
+    background-color: #f5f8ff;
+    border-radius: 5px;
+    border: 1px solid #f5f8ff;
+    padding: 0px 20px 0px 40px;
+    &:focus {
+        box-shadow: 0px 0px 3px 3px rgba(246, 73, 0, .3);
+        border: 1px solid $orange;
+        outline: none;
+        // position: absolute;
+        // width: 100%;
+       
+    }
+}
 
 
 a.header-link {
@@ -48,8 +77,12 @@ a.header-link {
 }
 
 nav {
-   display: flex;
-   box-sizing: border-box; 
+    margin-left: 40px;
+    display: flex;
+    box-sizing: border-box; 
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
 }
 
 // nav.login-signup-modal {
@@ -154,6 +187,7 @@ div#login-corner {
     font-weight: 600;
     padding: 8px 16px;
     height: 40px;
+    align-content: center;
     // border: 1px solid blue;
     &:hover{
         background: linear-gradient(227deg,#ff4582,#e12e0d);
