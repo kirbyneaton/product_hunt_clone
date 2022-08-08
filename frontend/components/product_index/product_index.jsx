@@ -45,30 +45,29 @@ class ProductIndex extends React.Component {
                 <aside>
                     <h1 id="latest-projects">LATEST PROJECTS ➔</h1>
                     <ul id="portfolio-projects">
-                        <li className="my-projects">
-                            {/* <a href="https://github.com/kirbyneaton/product_hunt_clone" target="_blank" className="header-link">Github</a> */}
-                            <a href="https://unshelvd-1.herokuapp.com/#/" target="_blank">
+                        <a href="https://unshelvd-1.herokuapp.com/#/" target="_blank"><li className="my-projects">
+                            {/* <a href="https://unshelvd-1.herokuapp.com/#/" target="_blank"> */}
                             <div>
                                 <h3>Unshelvd</h3>
                                 <p>Unshelvd is a social gaming site that does away with uncertainty at your next meetup amongst friends. Just let the site know how many people you have, what your interests include (or exclude), and Unshelvd will give you a list of the games to pull off the (virtual) shelf.</p>
                             </div>
                             <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/product-hunt-logo-orange-960.png" alt="project-picture" />
-                            </a>
-                        </li>
-                        <li className="my-projects">
+                            {/* </a> */}
+                        </li></a>
+                        <a href="https://kirbyneaton.github.io/stock_market_game/" target="_blank"><li className="my-projects">
                             <div id="project-2">
                                 <h3>Ride The Bull</h3>
                                 <p>Think you can time the market to grow your money faster? This game simulates how a player's money would compare to a market index if they had instead elected to sell and get out of the market at a specified time. The game is meant to illustrate the difficulty of consistently timing the market well, the pitfalls of hindsight bias, and the philosophy pioneered by Vanguard founder, Jack Bogle, which preached investment over speculation.</p>
                             </div>
                             <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/product-hunt-logo-orange-960.png" alt="project-picture" />
-                        </li>
-                        <li className="my-projects">
+                        </li></a>
+                        <a href="https://kirbyneaton.github.io" target="_blank"><li className="my-projects">
                             <div>
                                 <h3>Portfolio Site</h3>
                                 <p>Description</p>
                             </div>
                             <img src="https://raw.githubusercontent.com/kirbyneaton/product_hunt_clone/main/app/assets/images/product-hunt-logo-orange-960.png" alt="project-picture" />
-                        </li>
+                        </li></a>
                     </ul>
                     <div id='fishing-soon'>
                         <h2>Fishing soon?</h2>
